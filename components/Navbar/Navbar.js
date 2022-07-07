@@ -33,7 +33,7 @@ const Navbar = ({ hide }) => {
             </IconContext.Provider> */}
           </NavLogo>
           {hide && (
-            <StartLink to="about" offset={0} smooth={true} duration={950}>
+            <StartLink to="about" offset={-25} smooth={true} duration={950}>
               <ImMoveDown/>
             </StartLink>
           )}
