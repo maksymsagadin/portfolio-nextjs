@@ -61,7 +61,7 @@ export const HeroButton = styled(motion.button)`
 	background-color: ${primary};
 	color: ${light};
 	cursor: pointer;
-	transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in-out;
 	overflow: hidden;
 	&.corner {
 		position: fixed;
@@ -74,7 +74,7 @@ export const HeroButton = styled(motion.button)`
 		border-radius: 50%;
 	}
 	&:hover {
-		box-shadow: -5px 5px 9px 5px ${dark};
+		box-shadow: -5px 5px 9px 3px ${dark};
 		background-color: ${secondary};
 		color: ${dark};
 	}

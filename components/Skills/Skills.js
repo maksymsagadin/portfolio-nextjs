@@ -3,14 +3,14 @@ import Image from 'next/image'
 import { Section, Container, Heading } from '../../styles/globalStyles'
 import { SkillsGrid, SkillWrapper } from './SkillsStyles'
 import { skillData } from '../../data/SkillData'
-import bgimg from '/public/backgrounds/bg-flip.png'
+import bgimg from '/public/backgrounds/bg-creme.png'
 
 const Skills = ({ id }) => {
   return (
     <Section id={id} >
 		<Image alt='Background' src={bgimg} priority layout='fill' objectFit='cover' objectPosition='center'/>
         <Container>
-            <Heading>Expertise</Heading>
+            <Heading inverse >Expertise</Heading>
             <SkillsGrid>
                 {skillData.map((skill, index) => (
                 <SkillWrapper key={index}>

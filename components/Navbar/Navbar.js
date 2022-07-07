@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Image from 'next/image'
 import { FaTimes } from 'react-icons/fa'
 import { GiInkSwirl } from 'react-icons/gi'
 import { CgMenuRight } from 'react-icons/cg'
@@ -16,6 +17,8 @@ import {
 } from './NavbarStyles'
 import { animateScroll as scroll } from 'react-scroll'
 import { navbarData } from '/data/NavbarData.js'
+import logo from '/public/Mlogo.png'
+
 
 const Navbar = ({ hide }) => {
     const [show, setShow] = useState(false);
@@ -23,9 +26,11 @@ const Navbar = ({ hide }) => {
       <Nav hide={hide}>
 			  <NavbarContainer>
           <NavLogo >
-            <IconContext.Provider value={{ color: 'white' }}>
+            <Image src={logo} height={75} width={75} quality={100} onClick={scroll.scrollToTop}/>
+            {/* <IconContext.Provider value={{ color: 'white' }}>
+
               <GiInkSwirl onClick={scroll.scrollToTop} size='2.5rem' />
-            </IconContext.Provider>
+            </IconContext.Provider> */}
           </NavLogo>
           {hide && (
             <StartLink to="about" offset={0} smooth={true} duration={950}>

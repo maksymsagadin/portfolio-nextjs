@@ -7,8 +7,8 @@ import { light, dark, primary } from '../../data/GlobalData'
 export const Nav = styled.nav`
 	background: ${({ hide }) => (hide ? 'transparent' : dark)};
 	transition: all 0.5s ease;
-	margin-top: -80px;
-	height: 80px;
+	margin-top: -100px;
+	height: 100px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -41,13 +41,13 @@ export const NavLogo = styled.div`
 
 export const StartLink = styled(LinkScroll)`
 	color: ${light};
-	/* display: flex; */
+	display: flex;
 	align-items: center;
 	text-decoration: none;
-	padding: 0.5rem 1rem;
+	/* padding: 0.5rem 1rem; */
 	height: 100%;
 	transition: all 0.4s ease;
-	font-size: 2.5rem;
+	font-size: 3.5rem;
 	&:hover {
 		color: ${primary};
 		cursor: pointer;
@@ -67,7 +67,6 @@ export const MobileIcon = styled.div`
 		font-size: 1.8rem;
 		cursor: pointer;
 	}
-	
 `
 
 export const NavMenu = styled.ul`
@@ -96,7 +95,7 @@ export const NavMenu = styled.ul`
 `
 
 export const NavItem = styled.li`
-	height: 80px;
+	height: 55px;
 	cursor: pointer;
 	@media screen and (max-width: 960px) {
 		width: 100%;
@@ -111,9 +110,9 @@ export const NavLinks = styled(LinkScroll)`
 	display: flex;
 	align-items: center;
 	text-decoration: none;
-	padding: 0.5rem 1rem;
+	padding: 0rem 1rem;
 	height: 100%;
-	transition: all 0.4s ease;
+	transition: all 0.5s ease;
 	&.active {
 		@media screen and (min-width: 960px) {
 			border-bottom: 2px solid ${primary};
