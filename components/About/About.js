@@ -9,8 +9,6 @@ import {
 	InfoHeading,
 } from './AboutStyles'
 import Image from 'next/image'
-import heroimg from '/public/hero_image.jpg'
-import bgimg from '/public/backgrounds/bg-dark.png'
 
 
 const Info = ({ id }) => {
@@ -18,11 +16,10 @@ const Info = ({ id }) => {
 
     return (
         <Section id={id} >
-			<Image alt='Background' src={bgimg} priority layout='fill' objectFit='cover' objectPosition='center'/>
+			<Image alt='Background' src={aboutData.bgImg} priority layout='fill' objectFit='cover' objectPosition='center'/>
 			<InfoRow>
 				<InfoColumn>
-					<Image alt="Maksym" src={heroimg} objectFit='contain' objectPosition='center' height={600} quality={100} />
-					
+					<Image alt="Maksym" src={aboutData.heroImg} height={500} width={500} objectFit='contain' objectPosition='right'  quality={100} />
 				</InfoColumn>
 				<InfoColumn>
 					<InfoWrapper>

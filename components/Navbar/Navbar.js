@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import { FaTimes } from 'react-icons/fa'
-import { GiInkSwirl } from 'react-icons/gi'
 import { CgMenuRight } from 'react-icons/cg'
 import { ImMoveDown } from 'react-icons/im'
 import { IconContext} from 'react-icons/'
@@ -27,10 +26,6 @@ const Navbar = ({ hide }) => {
 			  <NavbarContainer>
           <NavLogo >
             <Image src={logo} height={75} width={75} quality={100} onClick={scroll.scrollToTop}/>
-            {/* <IconContext.Provider value={{ color: 'white' }}>
-
-              <GiInkSwirl onClick={scroll.scrollToTop} size='2.5rem' />
-            </IconContext.Provider> */}
           </NavLogo>
           {hide && (
             <StartLink to="about" offset={-25} smooth={true} duration={950}>
@@ -40,7 +35,7 @@ const Navbar = ({ hide }) => {
           {!hide && (
             <>
               <IconContext.Provider value={{ color: 'white' }}>
-                <MobileIcon onClick={() => setShow(!show)}>
+                <MobileIcon onClick={() => setShow((prevShow) => !prevShow)}>
                   {show ? <FaTimes /> : <CgMenuRight />}
                 </MobileIcon>
               </IconContext.Provider>

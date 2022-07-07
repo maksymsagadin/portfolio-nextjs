@@ -6,7 +6,6 @@ import { light, dark, primary } from '../../data/GlobalData'
 
 export const Nav = styled.nav`
 	background: ${({ hide }) => (hide ? 'transparent' : dark)};
-	transition: all 0.5s ease;
 	margin-top: -100px;
 	height: 100px;
 	display: flex;
@@ -37,6 +36,9 @@ export const NavLogo = styled.div`
 		color: ${light};
 		transition: all 0.4s ease;
 	}
+	@media screen and (max-width: 960px) {
+		z-index: 50;
+	}
 `
 
 export const StartLink = styled(LinkScroll)`
@@ -61,6 +63,7 @@ export const MobileIcon = styled.div`
 	@media screen and (max-width: 960px) {
 		display: block;
 		position: absolute;
+		z-index: 50;
 		top: 0;
 		right: 0;
 		transform: translate(-100%, 60%);
