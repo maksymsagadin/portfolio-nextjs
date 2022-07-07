@@ -1,14 +1,8 @@
 import React from 'react'
-import { aboutData } from '../../data/AboutData'
-import { Section } from '../../styles/globalStyles'
-import {
-	InfoWrapper,
-	InfoDesc,
-	InfoRow,
-	InfoColumn,
-	InfoHeading,
-} from './AboutStyles'
 import Image from 'next/image'
+import { aboutData } from '../../data/AboutData'
+import { Section, SubHeading, BodyText } from '../../styles/globalStyles'
+import { Wrapper, Row, Column } from './AboutStyles'
 
 
 const Info = ({ id }) => {
@@ -17,18 +11,18 @@ const Info = ({ id }) => {
     return (
         <Section id={id} >
 			<Image alt='Background' src={aboutData.bgImg} priority layout='fill' objectFit='cover' objectPosition='center'/>
-			<InfoRow>
-				<InfoColumn>
+			<Row>
+				<Column>
 					<Image alt="Maksym" src={aboutData.heroImg} height={500} width={500} objectFit='contain' objectPosition='right'  quality={100} />
-				</InfoColumn>
-				<InfoColumn>
-					<InfoWrapper>
-						<InfoHeading>{headline}</InfoHeading>
-						<InfoDesc>{intro}</InfoDesc>
-						<InfoDesc>{description}</InfoDesc>
-					</InfoWrapper>
-				</InfoColumn>
-			</InfoRow>
+				</Column>
+				<Column>
+					<Wrapper>
+						<SubHeading>{headline}</SubHeading>
+						<BodyText>{intro}</BodyText>
+						<BodyText>{description}</BodyText>
+					</Wrapper>
+				</Column>
+			</Row>
 		</Section>
     )
 }

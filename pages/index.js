@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Hero from '../components/Hero/Hero'
 import About from '../components/About/About'
 import Skills from '../components/Skills/Skills'
+import Content from '../components/Content/Content'
+import { projectData } from '../data/ProjectData'
 
 
 export default function Home() {
@@ -13,8 +15,13 @@ export default function Home() {
         <link rel="icon" href="/star.png" />
       </Head>
       <Hero />
-      <About id="about" />
-      <Skills id="skills" />
+      <About id='about' />
+      {/* <Skills id='skills' /> */}
+      <div id='projects'>
+        {projectData.map((project, index) => (
+          <Content {...project} key={index} />
+        ))}
+      </div>
     </div>
   )
 }
