@@ -15,10 +15,15 @@ export const HeroSection = styled.section`
 
 export const ImageFilter = styled.div`
 	position: absolute;
-	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.5));
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7));
 	height: 100%;
 	width: 100%;
 `
+
+export const HeroName = styled.span`
+	color: ${primary};
+`
+
 export const HeroTitle = styled.h2`
 	margin-bottom: 2rem;
 	font-size: clamp(2rem, 4vw, 3.5rem);

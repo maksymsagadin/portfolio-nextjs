@@ -4,10 +4,10 @@ import { Container, Heading } from '../../styles/globalStyles'
 import Navbar from '../Navbar/Navbar'
 import ContactForm from '../ContactForm/ContactForm'
 import Modal from '../Modal/Modal'
-import { HeroSection, ImageFilter, HeroTitle, HeroText, ButtonContainer, ButtonWrapper, HeroButton, ContactIcon } from './HeroStyles'
+import { HeroSection, ImageFilter, HeroName, HeroTitle, HeroText, ButtonContainer, ButtonWrapper, HeroButton, ContactIcon } from './HeroStyles'
 import { useInView } from 'react-intersection-observer'
 import { heroData } from '../../data/HeroData'
-import bgimg from '/public/backgrounds/bg-blue.jpg'
+import bgimg from '/public/backgrounds/sunset.jpg'
 
 const Hero = () => {
 	const [showModal, setShowModal] = useState(false)
@@ -22,7 +22,10 @@ const Hero = () => {
 			<Image alt='Background' src={bgimg} priority layout='fill' objectFit='cover' objectPosition='center' quality={100}/>
 			<ImageFilter />
 			<Container>
-				<Heading center>{heroData.heading}</Heading>
+				<Heading center>
+					{heroData.heading}
+					<HeroName>{heroData.name}</HeroName>
+				</Heading>
 				<HeroTitle center>{heroData.title}</HeroTitle>
 				<HeroText>{heroData.statement}</HeroText>
 				<ButtonContainer>
