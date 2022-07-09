@@ -10,6 +10,9 @@ export const SectionWrapper = styled(motion.div)`
 	justify-content: center;
 	position: relative;
 	background: ${({ backgroundcolor }) => (backgroundcolor ? backgroundcolor : primary)};
+	@media screen and (max-width: 768px) {
+		padding: 2.5rem 0rem;
+	}
 	/* &:before {
 		width: 100%;
 		height: 100%;
