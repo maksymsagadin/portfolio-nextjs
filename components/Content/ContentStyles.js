@@ -90,7 +90,7 @@ export const ProjectButton = styled(motion.button)`
 	border-radius: 0.5rem;
 	background: ${primary};
 	white-space: nowrap;
-	padding: 10px 20px;
+	padding: 10px 40px;
 	font-size: 16px;
 	color: ${light};
 	outline: none;

@@ -4,8 +4,8 @@ const projectOne = {
 	description:
 		'Produced a responsive website using React.js that features smooth scrolling NavBar links, animate content onto the page as you scroll into view and a Modal window to display content. Styled Components were used to style all of the components.',
 	buttonLabel: 'View',
-	linkTo: 'https://a-cut-above-autofilm.vercel.app/',
-	img: '/projects/nextjs_blog.png',
+	linkTo: 'https://dentdude.vercel.app/',
+	img: '/projects/pdr_site.png',
 	alt: 'React Animated Site',
 	backgroundColor: 'linear-gradient(180deg, #f3f4f6 0% , #b4b4bc 100%)',
 }
