@@ -58,7 +58,7 @@ const Content = ({
 
 
     return (
-        <SectionWrapper ref={ref} backgroundColor={backgroundColor}>
+        <SectionWrapper ref={ref} backgroundcolor={backgroundColor}>
             <Container>
                 <ContentRow inverse={inverse}>
                     <ContentColumn initial={initial}
@@ -120,7 +120,7 @@ const Content = ({
                     </ContentColumn>
                 </ContentRow>
             </Container>
-            </SectionWrapper>
+        </SectionWrapper>
     )
 }
 

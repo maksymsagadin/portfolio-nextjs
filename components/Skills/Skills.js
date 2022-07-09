@@ -9,16 +9,16 @@ const Skills = ({ id }) => {
   return (
     <Section height={700} id={id} >
 		  <Image alt='Background' src={bgimg} priority layout='fill' objectFit='cover' objectPosition='center'/>
-        <Container>
-            <Heading inverse >Expertise</Heading>
-            <SkillsGrid>
-                {skillData.map((skill, index) => (
-                <SkillWrapper key={index}>
-                    <Image src={skill.img} width={64} height={64} layout='fixed'/>
-                    <SkillText>{skill.text}</SkillText>
-                </SkillWrapper>
-            ))}
-            </SkillsGrid>
+      <Container>
+          <Heading inverse >Expertise</Heading>
+          <SkillsGrid>
+              {skillData.map((skill, index) => (
+              <SkillWrapper key={index}>
+                  <Image src={skill.img} width={64} height={64} layout='fixed'/>
+                  <SkillText>{skill.text}</SkillText>
+              </SkillWrapper>
+          ))}
+          </SkillsGrid>
         </Container>
     </Section>
   )

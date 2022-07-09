@@ -9,7 +9,7 @@ export const SectionWrapper = styled(motion.div)`
     align-items: center;
 	justify-content: center;
 	position: relative;
-	background: ${({ backgroundColor }) => (backgroundColor ? backgroundColor : primary)};
+	background: ${({ backgroundcolor }) => (backgroundcolor ? backgroundcolor : primary)};
 	/* &:before {
 		width: 100%;
 		height: 100%;
