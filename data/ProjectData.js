@@ -11,13 +11,12 @@ const projectOne = {
 }
 
 const projectTwo = {
-	inverse: true,
+	inverse: 'true',
 	topLine: 'Next.js',
 	headline: 'Paint Protection Film Blog',
 	description:
 		"Developed a modern Blog website using Next.JS that pulls content from GraphCMS via an API call in order to manage all blog content through the simple GraphCMS interface. TailwindCSS was used to style the page and components and create a mobile-first, responsive design.",
 	buttonLabel: 'View',
-
 	linkTo: 'https://a-cut-above-autofilm.vercel.app/',
 	img: '/projects/nextjs_blog.png',
 	alt: 'GraphCMS Nextjs Blog',
@@ -25,22 +24,21 @@ const projectTwo = {
 }
 
 const projectThree = {
-	textinverse: true,
+	textinverse: 'true',
 	topLine: 'Plain Javascript',
 	headline: "Stock Media Search",
 	description:
 		'Created a website that displays high quality photos/videos by using an Ajax request to the Pexels REST API. Processed JSON data from API request using Javascript and DOM methods to dynamically populate the page based on user search input.',
 	buttonLabel: 'View',
-
 	linkTo: 'https://maksymsagadin.github.io/photo-search-app/',
-	backgroundColor: 'linear-gradient(180deg, #3d709b 0% , #020305 100%)',
 	img: '/projects/stock_media.png',
 	alt: 'Pixels API Project',
+	backgroundColor: 'linear-gradient(180deg, #3d709b 0% , #020305 100%)',
 }
 
 const projectFour = {
-	inverse: true,
-	textinverse: true,
+	inverse: 'true',
+	textinverse: 'true',
 	topLine: 'Plain Javascript',
 	headline: 'Website Animation Clone',
 	description:
