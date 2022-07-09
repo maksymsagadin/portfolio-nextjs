@@ -97,21 +97,28 @@ export const FormInputRow = styled.div`
 `
 
 export const FormInput = styled.input`
-	display: block;
 	background: ${light};
+	color: ${secondary};
 	padding-left: 16px;
 	outline: none;
 	border-radius: 2px;
 	height: 40px;
 	width: 100%;
 	border: none;
+	transition: all 0.6s ease-in-out;
 	border-left: 3px solid ${secondary};
-	border-bottom: 1px solid ${secondary};
+	border-bottom: 2px solid ${secondary};
 	font-size: 1rem;
+	&:focus {
+		border-left: 3px solid ${primary};
+		border-bottom: 2px solid ${primary};
+		color: ${primary};
+	}
 `
 
 export const FormTextArea = styled.textarea`
 	background: ${light};
+	color: ${secondary};
 	padding-left: 16px;
 	padding-top: 10px;
 	outline: none;
@@ -119,10 +126,16 @@ export const FormTextArea = styled.textarea`
 	height: 80px;
 	width: 100%;
 	border: none;
+	transition: all 0.6s ease-in-out;
 	border-left: 3px solid ${secondary};
-	border-bottom: 1px solid ${secondary};
+	border-bottom: 2px solid ${secondary};
 	font-size: 1rem;
 	resize: none;
+	&:focus {
+		border-left: 3px solid ${primary};
+		border-bottom: 2px solid ${primary};
+		color: ${primary};
+	}
 	@media screen and (max-width: 900px) {
 		height: 60px;
 	}
