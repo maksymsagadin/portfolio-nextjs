@@ -93,7 +93,7 @@ const Content = ({
                                 <a target='_blank'>
                                     <ProjectButton
                                         initial={initial}
-                                        transition={{ delay: 0.9, duration: 0.6 }}
+                                        transition={{ delay: 0.7, duration: 0.6 }}
                                         animate={animation}
                                         >
                                         {buttonLabel}
