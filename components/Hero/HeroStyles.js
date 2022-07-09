@@ -19,16 +19,23 @@ export const ImageFilter = styled.div`
 	height: 100%;
 	width: 100%;
 `
-
+export const HeroTitle = styled.h2`
+	margin-bottom: 2rem;
+	font-size: clamp(2rem, 4vw, 3.5rem);
+	letter-spacing: 4px;
+	font-weight: 600;
+	color: ${({ inverse }) => (inverse ? dark : light )};
+	text-align: center;
+`
 export const HeroText = styled.p`
-	margin-bottom: 35px;
-	font-size: clamp(0.9rem, 1.5vw, 1.3rem);
+	font-size: clamp(1rem, 1.5vw, 3rem);
 	line-height: 24px;
 	text-align: center;
 	letter-spacing: 2px;
 	color: ${light};
+	@media screen and (max-width: 768px) {
+	}
 `
-
 export const ButtonContainer = styled.div`
 	z-index: 50;
 	position: relative;
@@ -53,15 +60,13 @@ export const HeroButton = styled(motion.button)`
 	right: 50%;
 	transform: translate(50%);
 	font-weight: 700;
-	/* line-height: 18px; */
-	/* letter-spacing: 1.5px; */
 	text-transform: uppercase;
 	border-radius: 25px;
 	border: 2px solid ${secondary};
 	background-color: ${primary};
 	color: ${light};
 	cursor: pointer;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.6s ease-in-out;
 	overflow: hidden;
 	&.corner {
 		position: fixed;
@@ -85,7 +90,7 @@ export const HeroButton = styled(motion.button)`
 		top: 50%;
 		left: 50%;
 		z-index: -1;
-		transition: all 1s ease-in-out;
+		transition: all 0.6s ease-in-out;
 		width: 100%;
 		height: 0%;
 		transform: translate(-50%, -50%) rotate(45deg);

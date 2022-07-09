@@ -4,12 +4,14 @@ import { light, dark, primary, secondary } from '../../data/GlobalData'
 export const SkillsGrid = styled.div`
     display: grid;
 	position: relative;
-    gap: 2.5rem;
+	padding-bottom: 9rem;
+    gap: 2rem;
 	width: 100%;
 	grid-template-columns: repeat(4,2fr);
     @media screen and (max-width: 940px) {
 		grid-template-columns: repeat(2, 1fr);
 		justify-content: center;
+		padding-bottom: 2rem;
 		gap: 1rem;
 	}
 	@media screen and (max-width: 475px) {

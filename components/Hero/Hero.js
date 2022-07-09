@@ -2,10 +2,9 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import { Container, Heading } from '../../styles/globalStyles'
 import Navbar from '../Navbar/Navbar'
-import { SiMinutemailer } from 'react-icons/si'
-// import ContactForm from '../ContactForm/ContactForm'
-// import Modal from '../Modal/Modal'
-import { HeroSection, ImageFilter, HeroText, ButtonContainer, ButtonWrapper, HeroButton, ContactIcon } from './HeroStyles'
+import ContactForm from '../ContactForm/ContactForm'
+import Modal from '../Modal/Modal'
+import { HeroSection, ImageFilter, HeroTitle, HeroText, ButtonContainer, ButtonWrapper, HeroButton, ContactIcon } from './HeroStyles'
 import { useInView } from 'react-intersection-observer'
 import { heroData } from '../../data/HeroData'
 import bgimg from '/public/backgrounds/bg-blue.jpg'
@@ -14,7 +13,7 @@ const Hero = () => {
 	const [showModal, setShowModal] = useState(false)
 
 	const { ref, inView } = useInView({
-		rootMargin: '-80px',
+		rootMargin: '-100px',
 	})
 
   return (
@@ -24,11 +23,11 @@ const Hero = () => {
 			<ImageFilter />
 			<Container>
 				<Heading center>{heroData.heading}</Heading>
-				<Heading center>{heroData.title}</Heading>
+				<HeroTitle center>{heroData.title}</HeroTitle>
 				<HeroText>{heroData.statement}</HeroText>
 				<ButtonContainer>
 					<ButtonWrapper>
-						<HeroButton className={inView ? '' : 'corner'}>
+						<HeroButton onClick={() => setShowModal(true)} className={inView ? '' : 'corner'}>
 							{inView ? <> Get in touch </> : <ContactIcon />}
 						</HeroButton>
 					</ButtonWrapper>
@@ -36,11 +35,9 @@ const Hero = () => {
 			</Container>
 		</HeroSection>
 		<Navbar hide={inView} />
-		{/* <Modal show={showModal} onHide={() => setShowModal(false)}>
-			
+		<Modal show={showModal} onHide={() => setShowModal(false)}>
 			<ContactForm />
-		</Modal> */}
-		
+		</Modal>
 	</>
 	
    

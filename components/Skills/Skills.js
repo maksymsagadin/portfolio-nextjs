@@ -7,8 +7,8 @@ import bgimg from '/public/backgrounds/bg-creme.png'
 
 const Skills = ({ id }) => {
   return (
-    <Section id={id} >
-		<Image alt='Background' src={bgimg} priority layout='fill' objectFit='cover' objectPosition='center'/>
+    <Section height={700} id={id} >
+		  <Image alt='Background' src={bgimg} priority layout='fill' objectFit='cover' objectPosition='center'/>
         <Container>
             <Heading inverse >Expertise</Heading>
             <SkillsGrid>

@@ -3,22 +3,40 @@ import styled from 'styled-components'
 import { motion } from 'framer-motion'
 import { light, dark, primary, secondary } from '../../data/GlobalData'
 
+export const SectionWrapper = styled(motion.div)`
+	display: flex;
+    padding: 5rem 2rem;
+    align-items: center;
+	justify-content: center;
+	position: relative;
+	background: ${({ backgroundColor }) => (backgroundColor ? backgroundColor : primary)};
+	/* &:before {
+		width: 100%;
+		height: 100%;
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-image: url('/hero-pattern-bg.png');
+		background-size: 100% auto;
+		object-fit: cover;
+	} */
+`
 
 export const ContentRow = styled.div`
 	display: flex;
-	margin: 0 -15px -15px -15px;
 	flex-wrap: wrap;
 	align-items: center;
-	flex-direction: ${({ reverse }) => (reverse ? 'row-reverse' : 'row')};
+    gap: 3rem;
+	flex-direction: ${({ inverse }) => (inverse ? 'row-reverse' : 'row')};
 	justify-content: space-around;
 	@media screen and (max-width: 768px) {
 		flex-direction: column-reverse;
+        gap: 0rem;
+
 	}
 `
 export const ContentColumn = styled(motion.div)`
-	margin-bottom: 15px;
-	padding-right: 15px;
-	padding-left: 15px;
 	flex: 1;
 	z-index: 10;
 	display: flex;
@@ -33,9 +51,8 @@ export const ContentColumn = styled(motion.div)`
 export const TextWrapper = styled.div`
 	max-width: 540px;
 	padding-top: 0;
-	text-align: ${({ reverse }) => (reverse ? 'left' : 'right')};
+	text-align: ${({ inverse }) => (inverse ? 'left' : 'right')};
 	@media screen and (max-width: 768px) {
-		padding-bottom: 65px;
         display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -45,12 +62,13 @@ export const TextWrapper = styled.div`
 	}
 `
 export const TopText = styled(motion.div)`
+	padding-top: 2rem;
 	font-size: 1rem;
 	line-height: 16px;
 	font-weight: 700;
 	letter-spacing: 1.4px;
 	margin-bottom: 1.3rem;
-	color: ${secondary};
+	color: grey;
 `
 export const Heading = styled(motion.h2)`
 	margin-bottom: 24px;
@@ -65,28 +83,28 @@ export const Heading = styled(motion.h2)`
 export const Description = styled(motion.p)`
 	margin-bottom: 2rem;
 	line-height: 24px;
-    color: ${dark};
-	text-align: ${({ reverse }) => (reverse ? 'left' : 'right')};
+    color: ${({ textinverse }) => (textinverse ? light : dark)};
+	text-align: ${({ inverse }) => (inverse ? 'left' : 'right')};
 `
 export const ProjectButton = styled(motion.button)`
-	border-radius: 4px;
-	background: none;
+	border-radius: 0.5rem;
+	background: ${primary};
 	white-space: nowrap;
 	padding: 10px 20px;
 	font-size: 16px;
-	color: ${primary};
+	color: ${light};
 	outline: none;
 	border: 2px solid ${secondary};
 	cursor: pointer;
 	overflow: hidden;
 	position: relative;
+    transition: all 0.6s ease-in-out;
 	&:before {
-		background: ${light};
+		background: ${secondary};
 		content: '';
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%, -50%);
 		z-index: -1;
 		transition: all 0.6s ease;
 		width: 100%;
@@ -103,23 +121,11 @@ export const ProjectButton = styled(motion.button)`
 
 export const ImgWrapper = styled(motion.div)`
 	display: flex;
-	max-height: 600px;
-	justify-content: center;
-	box-shadow: 0 0 32px 4px ${dark};
+	justify-content: ${({ inverse }) => (inverse ? 'flex-end' : 'flex-start')};
+    padding: 1rem;
 	border-radius: 1rem;
 	position: relative;
-	background: ${({ backgroundColor }) => (backgroundColor ? backgroundColor : primary)};
-	&:before {
-		width: 100%;
-		height: 100%;
-		content: '';
-		position: absolute;
-		top: 0;
-		right: 0;
-		background-image: url('/hero-pattern-bg.png');
-		background-size: 100% auto;
-		object-fit: cover;
-	}
+	
 `
 export const Img = styled(motion.img)`
 	padding-right: 0;
