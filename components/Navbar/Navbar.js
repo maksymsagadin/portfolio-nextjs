@@ -22,6 +22,7 @@ import logo from '/public/Mlogo.png'
 const Navbar = ({ hide }) => {
     const [show, setShow] = useState(false)
     const offset = -80
+    const duration = 950
 
     return (
       <Nav hide={hide}>
@@ -30,7 +31,7 @@ const Navbar = ({ hide }) => {
             <Image src={logo} height={75} width={75} quality={100} onClick={scroll.scrollToTop}/>
           </NavLogo>
           {hide && (
-            <StartLink to="about" offset={offset} smooth={true} duration={950}>
+            <StartLink to="about" offset={offset} smooth={true} duration={duration}>
               <ImMoveDown/>
             </StartLink>
           )}
@@ -45,10 +46,10 @@ const Navbar = ({ hide }) => {
                 {navbarData.map((el, index) => (
                   <NavItem key={index}>
                     <NavLinks
-                      spy={el.spy}
-                      duration={el.duration}
+                      spy={true}
+                      duration={duration}
                       smooth={true}
-                      exact={el.exact}
+                      exact={true}
                       offset={offset}
                       onClick={() => setShow(false)}
                       to={el.to}
