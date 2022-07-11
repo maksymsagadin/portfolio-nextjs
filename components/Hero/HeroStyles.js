@@ -66,12 +66,11 @@ export const HeroButton = styled(motion.button)`
 	transform: translate(50%);
 	font-weight: 700;
 	text-transform: uppercase;
-	border-radius: 25px;
+	border-radius: 0.75rem;
 	border: 2px solid ${secondary};
 	background-color: ${primary};
 	color: ${light};
 	cursor: pointer;
-	transition: all 0.6s ease-in-out;
 	overflow: hidden;
 	&.corner {
 		position: fixed;
@@ -82,11 +81,13 @@ export const HeroButton = styled(motion.button)`
 		padding: 10px;
 		background-color: ${primary};
 		border-radius: 50%;
+		transition: all 0.8s ease-in-out;
 	}
 	&:hover {
 		box-shadow: -5px 5px 9px 3px ${dark};
 		background-color: ${secondary};
 		color: ${dark};
+		transition: all 0.6s ease-in-out;
 	}
 	&:before {
 		background: ${secondary};

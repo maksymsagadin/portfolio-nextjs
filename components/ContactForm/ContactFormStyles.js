@@ -166,7 +166,7 @@ export const FormButton = styled.button`
 		transition: all 0.6s ease-in-out;
 		width: 100%;
 		height: 0%;
-		transform: translate(-50%, -50%) rotate(135deg);
+		transform: translate(-50%, -50%) rotate(45deg);
 	}
 	&:hover:before {
 		height: 500%;
