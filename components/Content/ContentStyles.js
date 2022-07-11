@@ -90,7 +90,7 @@ export const Description = styled(motion.p)`
 	text-align: ${({ inverse }) => (inverse ? 'left' : 'right')};
 `
 export const ProjectButton = styled(motion.button)`
-	border-radius: 0.5rem;
+	border-radius: 0.75rem;
 	background: ${primary};
 	white-space: nowrap;
 	padding: 10px 40px;
@@ -126,14 +126,14 @@ export const ImgWrapper = styled(motion.div)`
 	display: flex;
 	justify-content: ${({ inverse }) => (inverse ? 'flex-end' : 'flex-start')};
     padding: 1rem;
-	border-radius: 1rem;
+	border-radius: 0.75rem;
 	position: relative;
 	
 `
 export const Img = styled(motion.img)`
 	padding-right: 0;
 	border: 0;
-	border-radius: 1rem;
+	border-radius: 0.75rem;
 	max-width: 100%;
 	object-fit: cover;
 	height: 300px;

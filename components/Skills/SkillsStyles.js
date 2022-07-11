@@ -27,12 +27,11 @@ export const SkillWrapper = styled.div`
     justify-content: space-evenly;
 	max-width: 350px;
 	border-radius: 5px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 	box-shadow: -1px 1px 3px 1px ${dark};
 	white-space: nowrap;
     &:hover {
-		box-shadow: -5px 5px 10px 3px ${dark};
-		color: ${primary};
+		color: ${dark};
 	}
 `
 export const SkillText = styled.p`

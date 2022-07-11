@@ -44,7 +44,7 @@ export const FormColumn = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-radius: 8px;
+	border-radius: 0.75rem;
 	flex-direction: column;
 	
 	@media screen and (max-width: 768px) {
@@ -63,7 +63,7 @@ export const HeroColumn = styled.div`
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
-	border-radius: 8px;
+	border-radius: 0.75rem;
 	flex-direction: column;
 	@media screen and (max-width: 900px) {
 		min-width: 44vw;
@@ -101,7 +101,7 @@ export const FormInput = styled.input`
 	color: ${secondary};
 	padding-left: 16px;
 	outline: none;
-	border-radius: 2px;
+	border-radius: 0.75rem;
 	height: 40px;
 	width: 100%;
 	border: none;
@@ -122,7 +122,7 @@ export const FormTextArea = styled.textarea`
 	padding-left: 16px;
 	padding-top: 10px;
 	outline: none;
-	border-radius: 2px;
+	border-radius: 0.75rem;
 	height: 80px;
 	width: 100%;
 	border: none;
@@ -142,12 +142,12 @@ export const FormTextArea = styled.textarea`
 `
 
 export const FormButton = styled.button`
-	border-radius: 0.5rem;
+	border-radius: 0.75rem;
 	background: ${primary};
-	margin-top: 1.5rem;
+	margin-top: 1rem;
 	width: 100%;
 	font-size: 1.4rem;
-	padding: 5px 15px;
+	padding: 10px 15px;
 	border: 2px solid ${secondary};
 	color: ${light};
 	outline: none;
