@@ -31,7 +31,7 @@ const Navbar = ({ hide }) => {
             <Image src={logo} height={75} width={75} quality={100} onClick={scroll.scrollToTop}/>
           </NavLogo>
           {hide && (
-            <StartLink to="about" offset={offset} smooth="true" duration={duration}>
+            <StartLink to="about" offset={-50} smooth="true" duration={duration}>
               <ImMoveDown/>
             </StartLink>
           )}
