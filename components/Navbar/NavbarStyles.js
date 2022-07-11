@@ -31,10 +31,12 @@ export const NavLogo = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: all 0.3s ease-in-out;
 	&:hover {
 		cursor: pointer;
 		color: ${light};
-		transition: all 0.4s ease;
+		box-shadow: -5px 5px 9px 3px ${dark};
+
 	}
 	@media screen and (max-width: 960px) {
 		z-index: 50;
