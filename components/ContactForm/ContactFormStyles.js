@@ -106,8 +106,8 @@ export const FormInput = styled.input`
 	width: 100%;
 	border: none;
 	transition: all 0.6s ease-in-out;
-	border-left: 3px solid ${secondary};
-	border-bottom: 2px solid ${secondary};
+	border-left: 2px solid ${secondary};
+	border-bottom: 1px solid ${secondary};
 	font-size: 1rem;
 	&:focus {
 		border-left: 3px solid ${primary};
@@ -127,8 +127,8 @@ export const FormTextArea = styled.textarea`
 	width: 100%;
 	border: none;
 	transition: all 0.6s ease-in-out;
-	border-left: 3px solid ${secondary};
-	border-bottom: 2px solid ${secondary};
+	border-left: 2px solid ${secondary};
+	border-bottom: 1px solid ${secondary};
 	font-size: 1rem;
 	resize: none;
 	&:focus {
