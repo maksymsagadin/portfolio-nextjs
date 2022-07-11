@@ -21,13 +21,13 @@ export const ModalWrapper = styled(motion.div)`
 	padding: 0;
 	background: ${light};
 	color: ${primary};
+	border: 2px solid ${secondary};
 	display: flex;
 	position: relative;
 	align-items: center;
 	flex-direction: column;
 	text-align: center;
-	border-radius: 6px;
-	
+	border-radius: 0.5rem;
 `
 
 export const CloseModalButton = styled(MdClose)`
