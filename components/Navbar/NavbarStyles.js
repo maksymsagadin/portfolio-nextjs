@@ -48,13 +48,15 @@ export const StartLink = styled(LinkScroll)`
 	display: flex;
 	align-items: center;
 	text-decoration: none;
-	/* padding: 0.5rem 1rem; */
 	height: 100%;
 	transition: all 0.4s ease;
 	font-size: 3.5rem;
 	&:hover {
 		color: ${primary};
 		cursor: pointer;
+	}
+	@media screen and (max-width: 960px) {
+		display: none;
 	}
 `
 
@@ -157,6 +159,5 @@ export const ContactButton = styled.button`
 		padding: 2rem;
 		width: 100%;
 		display: table;
-		
 	}
 `
