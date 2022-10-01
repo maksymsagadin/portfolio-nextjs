@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { aboutData } from '../../data/AboutData'
 import { Section, SubHeading, BodyText } from '../../styles/globalStyles'
-import { Wrapper, Row, Column } from './AboutStyles'
+import { Wrapper, Row, Column, Selfie } from './AboutStyles'
 
 
 const Info = ({ id }) => {
@@ -13,7 +13,7 @@ const Info = ({ id }) => {
 			<Image alt='Background' src={aboutData.bgImg} priority layout='fill' objectFit='cover' objectPosition='center'/>
 			<Row>
 				<Column>
-					<Image alt="Maksym" src={aboutData.heroImg} height={500} width={500} objectFit='contain' objectPosition='right'  quality={100} />
+					<Selfie alt="Maksym Sagadin" src={aboutData.heroImg} height={500} width={500} objectFit='cover' objectPosition='right'  quality={100} />
 				</Column>
 				<Column>
 					<Wrapper>

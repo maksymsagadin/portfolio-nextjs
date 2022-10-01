@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Image from 'next/image'
 import { light, dark, primary, secondary } from '../../data/GlobalData'
 
 
@@ -11,7 +12,7 @@ export const Row = styled.div`
 	@media screen and (max-width: 940px) {
 		grid-template-columns: repeat(1, 1fr);
 		> div:first-child {
-			display: none;
+			margin-bottom: 2rem;
 		}
 	}
 `
@@ -28,4 +29,8 @@ export const Wrapper = styled.div`
 	@media screen and (max-width: 768px) {
 		padding: 1rem;
 	}
+`
+export const Selfie = styled(Image)`
+	border-radius: 0.75rem;
+	overflow: hidden;
 `
