@@ -22,18 +22,20 @@ export const ImageFilter = styled.div`
 
 export const HeroName = styled.span`
 	color: ${primary};
+	/* color: #228b22; */
+	opacity: 90%;
 `
 
-export const HeroTitle = styled.h2`
+export const HeroTitle = styled.h3`
 	margin-bottom: 2rem;
-	font-size: clamp(2rem, 4vw, 3.5rem);
+	font-size: clamp(1rem, 2vw, 2rem);
 	letter-spacing: 4px;
 	font-weight: 600;
 	color: ${({ inverse }) => (inverse ? dark : light )};
 	text-align: center;
 `
 export const HeroText = styled.p`
-	font-size: clamp(1rem, 1.5vw, 3rem);
+	font-size: clamp(1rem, 1vw, 2rem);
 	line-height: 24px;
 	text-align: center;
 	letter-spacing: 2px;
