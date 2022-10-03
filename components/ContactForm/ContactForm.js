@@ -77,7 +77,7 @@ const ContactForm = () => {
 							name='textContent'
 							required='true'
 						/>
-						<FormButton type='submit' value='Send'>Contact</FormButton>
+						<FormButton type='submit' value='Send'>Send Email</FormButton>
 					</FormWrapper>
 					{error && (
 						<FormMessage
