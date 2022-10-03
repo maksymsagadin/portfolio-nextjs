@@ -84,12 +84,13 @@ export const Heading = styled(motion.h2)`
 	}
 `
 export const Description = styled(motion.p)`
-	margin-bottom: 2rem;
+	margin-bottom: 1.5rem;
 	line-height: 24px;
     color: ${({ textinverse }) => (textinverse ? light : dark)};
 	text-align: ${({ inverse }) => (inverse ? 'left' : 'right')};
 `
 export const ProjectButton = styled(motion.button)`
+	margin: 0.35rem;
 	border-radius: 0.75rem;
 	background: ${primary};
 	white-space: nowrap;
@@ -120,11 +121,7 @@ export const ProjectButton = styled(motion.button)`
 	&:hover {
 		color: ${light};
 	}
-	&:nth-child(1) {
-			margin-right: 0.5rem;
-			margin-bottom: 0.5rem;
-
-		}
+	
 `
 
 export const ImgWrapper = styled(motion.div)`
