@@ -20,7 +20,7 @@ export const SkillsGrid = styled.div`
 `
 export const SkillWrapper = styled.div`
     background: linear-gradient(45deg, ${light} 60%, ${secondary} 150%);
-    color: ${primary};
+    color: ${dark};
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -30,10 +30,8 @@ export const SkillWrapper = styled.div`
     transition: all 0.5s ease-in-out;
 	box-shadow: -1px 1px 3px 1px ${dark};
 	white-space: nowrap;
-    &:hover {
-		color: ${dark};
-	}
 `
 export const SkillText = styled.p`
 	padding-left: 0.5rem;
+	font-weight: 500;
 `

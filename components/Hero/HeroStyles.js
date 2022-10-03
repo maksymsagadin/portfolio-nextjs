@@ -23,6 +23,7 @@ export const ImageFilter = styled.div`
 export const HeroName = styled.span`
 	color: ${primary};
 	opacity: 90%;
+	font-weight: 600;
 `
 
 export const HeroTitle = styled.h3`
@@ -65,12 +66,12 @@ export const HeroButton = styled(motion.button)`
 	bottom: calc(100vh - 100px);
 	right: 50%;
 	transform: translate(50%);
-	font-weight: 700;
+	font-weight: 600;
 	text-transform: uppercase;
 	border-radius: 0.75rem;
 	border: 2px solid ${secondary};
 	background-color: ${primary};
-	color: ${light};
+	color: ${dark};
 	cursor: pointer;
 	overflow: hidden;
 	&.corner {
@@ -81,13 +82,15 @@ export const HeroButton = styled(motion.button)`
 		height: 64px;
 		padding: 10px;
 		background-color: ${primary};
+		color: ${dark};
 		border-radius: 50%;
 		transition: all 0.8s ease-in-out;
+		
 	}
 	&:hover {
-		box-shadow: -5px 5px 9px 3px ${dark};
+		box-shadow: -5px 5px 9px 3px ${primary};
 		background-color: ${secondary};
-		color: ${dark};
+		color: ${light};
 		transition: all 0.6s ease-in-out;
 	}
 	&:before {
@@ -109,8 +112,9 @@ export const HeroButton = styled(motion.button)`
 
 export const ContactIcon = styled(SiMinutemailer)`
 	font-size: 2.5rem;
-	color: ${light};
+	transition: all 0.6s ease-in-out;
+	color: ${dark};
 	&:hover {
-		color: ${dark};
+		color: ${light};
 	}
 `
