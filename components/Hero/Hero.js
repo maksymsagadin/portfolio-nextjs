@@ -34,6 +34,7 @@ const Hero = () => {
 				<Heading center>
 					<HeroName>{heroData.name}</HeroName>
 				</Heading>
+				<HeroTitle center>{heroData.title}</HeroTitle>
 				<HeroText>{heroData.statement}</HeroText>
 				<ButtonContainer>
 					<ButtonWrapper>
