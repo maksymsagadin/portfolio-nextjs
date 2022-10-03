@@ -32,7 +32,6 @@ const Hero = () => {
 			<ImageFilter />
 			<Container>
 				<Heading center>
-					{heroData.heading}
 					<HeroName>{heroData.name}</HeroName>
 				</Heading>
 				<HeroText>{heroData.statement}</HeroText>

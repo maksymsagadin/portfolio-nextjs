@@ -15,14 +15,13 @@ export const HeroSection = styled.section`
 
 export const ImageFilter = styled.div`
 	position: absolute;
-	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7));
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
 	height: 100%;
 	width: 100%;
 `
 
 export const HeroName = styled.span`
 	color: ${primary};
-	/* color: #228b22; */
 	opacity: 90%;
 `
 
