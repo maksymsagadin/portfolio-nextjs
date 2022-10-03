@@ -95,7 +95,7 @@ export const ProjectButton = styled(motion.button)`
 	white-space: nowrap;
 	padding: 10px 40px;
 	font-size: 16px;
-	color: ${light};
+	color: ${dark};
 	outline: none;
 	border: 2px solid ${secondary};
 	cursor: pointer;
@@ -118,8 +118,13 @@ export const ProjectButton = styled(motion.button)`
 		height: 500%;
 	}
 	&:hover {
-		color: ${dark};
+		color: ${light};
 	}
+	&:nth-child(1) {
+			margin-right: 0.5rem;
+			margin-bottom: 0.5rem;
+
+		}
 `
 
 export const ImgWrapper = styled(motion.div)`

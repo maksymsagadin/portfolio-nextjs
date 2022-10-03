@@ -29,9 +29,10 @@ const Content = ({
 	alt,
 	backgroundColor,
 	linkTo,
+    github,
 	inverse,
     textinverse,
- }) => {
+    }) => {
     const initial = { opacity: 0 }
 	const transition = { delay: 0.3, duration: 0.6 }
 	const animation = useAnimation()
@@ -96,7 +97,18 @@ const Content = ({
                                         transition={{ delay: 0.7, duration: 0.6 }}
                                         animate={animation}
                                         >
-                                        {buttonLabel}
+                                        {'View Website'}
+                                    </ProjectButton>
+                                </a>
+                            </Link>
+                            <Link href={github}>
+                                <a target='_blank'>
+                                    <ProjectButton
+                                        initial={initial}
+                                        transition={{ delay: 0.7, duration: 0.6 }}
+                                        animate={animation}
+                                        >
+                                        {'Github'}
                                     </ProjectButton>
                                 </a>
                             </Link>
