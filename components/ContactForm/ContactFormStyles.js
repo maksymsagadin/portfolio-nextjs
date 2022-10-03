@@ -15,9 +15,6 @@ export const ContactInfo = styled.h2`
 	margin: 1rem;
 	color: ${light};
 	font-size: 1.2rem;
-	/* &:first-child {
-		margin-bottom: -1rem;
-	} */
 	@media screen and (max-width: 768px) {
 		flex-direction: column-reverse;
 	}
@@ -27,6 +24,7 @@ export const FormTitle = styled.h2`
 	margin-bottom: 1rem;
 	font-size: 2rem;
 	font-weight: 600;
+	color: ${secondary};
 `
 
 export const FormRow = styled.div`
@@ -149,7 +147,7 @@ export const FormButton = styled.button`
 	font-size: 1.4rem;
 	padding: 10px 15px;
 	border: 2px solid ${secondary};
-	color: ${light};
+	color: ${dark};
 	outline: none;
 	cursor: pointer;
 	overflow: hidden;
@@ -173,6 +171,6 @@ export const FormButton = styled.button`
 	}
 	&:hover {
 		background: ${secondary};
-		color: ${dark};
+		color: ${light};
 	}
 `
