@@ -13,16 +13,14 @@ const Skills = ({ id }) => {
       <Container>
           <Heading>Expertise</Heading>
           <SkillsGrid>
-              {skillData.map((skill, index) => (
-                <Tilt key={index} className="Tilt" options={{ max: 30, scale: 1, reset: false }}>
-                  <SkillWrapper>
+            {skillData.map((skill, index) => (
+              <Tilt key={index} className="Tilt" options={{ max: 30, scale: 1, reset: false }}>
+                <SkillWrapper>
                   <Image src={skill.img} width={64} height={64} layout='fixed'/>
                   <SkillText>{skill.text}</SkillText>
                 </SkillWrapper>
-                </Tilt>
-
-              
-          ))}
+              </Tilt>
+            ))}
           </SkillsGrid>
         </Container>
     </Section>
