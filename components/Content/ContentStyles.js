@@ -5,7 +5,7 @@ import { light, dark, primary, secondary } from '../../data/GlobalData'
 
 export const SectionWrapper = styled(motion.div)`
 	display: flex;
-    padding: 5rem 2rem;
+    padding: 2rem 2rem;
     align-items: center;
 	justify-content: center;
 	position: relative;
