@@ -26,8 +26,6 @@ const projectTwo = {
 }
 
 const projectThree = {
-	inverse: 'true',
-	textinverse: 'true',
 	topLine: 'React.js',
 	headline: 'Expense Tracker',
 	description:
@@ -40,7 +38,7 @@ const projectThree = {
 
 }
 const projectFour = {
-	textinverse: 'true',
+	inverse: 'true',
 	topLine: 'React.js',
 	headline: "Exercise Website",
 	description:

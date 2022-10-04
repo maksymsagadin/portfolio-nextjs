@@ -9,7 +9,7 @@ export const SectionWrapper = styled(motion.div)`
     align-items: center;
 	justify-content: center;
 	position: relative;
-	background: ${({ backgroundcolor }) => (backgroundcolor ? backgroundcolor : primary)};
+	background: ${({ backgroundcolor }) => (backgroundcolor ? backgroundcolor : dark)};
 	@media screen and (max-width: 768px) {
 		padding: 2.5rem 0rem;
 	}
@@ -71,7 +71,7 @@ export const TopText = styled(motion.div)`
 	font-weight: 700;
 	letter-spacing: 1.4px;
 	margin-bottom: 1.3rem;
-	color: grey;
+	color: ${secondary};
 `
 export const Heading = styled(motion.h2)`
 	margin-bottom: 24px;
@@ -86,7 +86,7 @@ export const Heading = styled(motion.h2)`
 export const Description = styled(motion.p)`
 	margin-bottom: 1.5rem;
 	line-height: 24px;
-    color: ${({ textinverse }) => (textinverse ? light : dark)};
+    color: ${({ textinverse }) => (textinverse ? dark : light)};
 	text-align: ${({ inverse }) => (inverse ? 'left' : 'right')};
 `
 export const ProjectButton = styled(motion.button)`

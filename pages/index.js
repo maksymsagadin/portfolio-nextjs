@@ -1,10 +1,11 @@
 import Head from 'next/head'
+import Image from 'next/image'
+import bgimg from '/public/backgrounds/bg-dark.png'
+
 import Hero from '../components/Hero/Hero'
 import About from '../components/About/About'
 import Skills from '../components/Skills/Skills'
-import Content from '../components/Content/Content'
-import { Heading } from '../styles/globalStyles'
-import { projectData } from '../data/ProjectData'
+import Projects from '../components/Projects/Projects'
 
 
 export default function Home() {
@@ -18,12 +19,7 @@ export default function Home() {
       <Hero />
       <About id='about' />
       <Skills id='skills' />
-      <div id='projects'>
-        <Heading main inverse center>Projects</Heading>
-        {projectData.map((project, index) => (
-          <Content {...project} key={index} />
-        ))}
-      </div>
+      <Projects id='projects' />
     </div>
   )
 }

@@ -59,7 +59,7 @@ const Content = ({
 
 
     return (
-        <SectionWrapper ref={ref} backgroundcolor={backgroundColor}>
+        <SectionWrapper ref={ref} >
             <Container>
                 <ContentRow inverse={inverse}>
                     <ContentColumn initial={initial}

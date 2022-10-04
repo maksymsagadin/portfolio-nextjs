@@ -34,7 +34,7 @@ export const Section = styled.section`
 export const Heading = styled.h1`
 	font-size: clamp(2.5rem, 7vw, 4.5rem);
 	padding: ${({ main }) => (main ? '4rem' : '0 0 2rem 0')};
-	background-color: ${({ main }) => (main ? light : 'none')};
+	background-color: ${({ main }) => (main ? dark : 'none')};
 	color: ${({ inverse }) => (inverse ? dark : light)};
 	width: 100%;
 	letter-spacing: 4px;
