@@ -26,31 +26,32 @@ const projectTwo = {
 }
 
 const projectThree = {
-	textinverse: 'true',
-	topLine: 'Plain Javascript',
-	headline: "Stock Media Search",
-	description:
-		'Created a website that displays high quality photos/videos by using an Ajax request to the Pexels REST API. Processed JSON data from API request using Javascript and DOM methods to dynamically populate the page based on user search input.',
-	buttonLabel: 'View',
-	linkTo: 'https://maksymsagadin.github.io/photo-search-app/',
-	github: 'https://github.com/maksymsagadin/photo-search-app',
-	img: '/projects/stock_media.png',
-	alt: 'Pixels API Project',
-	backgroundColor: 'linear-gradient(180deg, #3d709b 0% , #020305 100%)',
-}
-
-const projectFour = {
 	inverse: 'true',
 	textinverse: 'true',
-	topLine: 'Plain Javascript',
-	headline: 'Website Animation Clone',
+	topLine: 'React.js',
+	headline: 'Expense Tracker',
 	description:
-		"Built a responsive animation website clone using Tailwind CSS and Javascript to showcase a sticky navigation panel, image carousel, scrolling image sequence, video preview selector and a fetch API request that dynamically populates data based on dropdown menu selection.",
+		" Developed a Personal Finance Tracker implementing Speechly API to allow a user to add transactions using their voice in order to remove the tedious clicking that comes with adding multiple transaction, as well as Chart.js to allows users to see a breakdown of their finances in a easy to understand visual Doughnut Chart.",
 	buttonLabel: 'View',
-	linkTo: 'https://maksym-sagadin-corsair.netlify.app/',
-	github: 'https://github.com/maksymsagadin/corsair-project',
-	img: '/projects/website_animation_project.png',
+	linkTo: 'https://income-tracker-reactjs.vercel.app/',
+	github: 'https://github.com/maksymsagadin/income-tracker-reactjs',
+	img: '/projects/expense_tracker.png',
+	backgroundColor: 'linear-gradient(180deg, #3d709b 0% , #020305 100%)',
+
+}
+const projectFour = {
+	textinverse: 'true',
+	topLine: 'React.js',
+	headline: "Exercise Website",
+	description:
+		'Produced a exercise guide website using React.js by getting exercise data from Rapid API to access 1000+ exercises with practical examples, pull related videos from Youtube via API, and suggest similar exercises.',
+	buttonLabel: 'View',
+	linkTo: 'https://uplift-reactjs.vercel.app/',
+	github: 'https://github.com/maksymsagadin/uplift-reactjs',
+	img: '/projects/uplift.png',
+	alt: 'Exercise API Project',
 	backgroundColor: 'linear-gradient(180deg, #020305 10% , #020305 100%)',
+
 }
 
 export const projectData = [ projectOne, projectTwo, projectThree, projectFour ]
