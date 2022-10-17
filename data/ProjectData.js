@@ -16,7 +16,7 @@ const projectTwo = {
 	topLine: 'Next.js',
 	headline: 'Paint Protection Film Blog',
 	description:
-		"Developed a modern Blog website using Next.JS that pulls content from GraphCMS via an API call in order to manage all blog content through the simple GraphCMS interface. TailwindCSS was used to style the page and components and create a mobile-first, responsive design.",
+		'Developed a modern Blog website using Next.JS that pulls content from GraphCMS via an API call in order to manage all blog content through the simple GraphCMS interface. TailwindCSS was used to style the page and components and create a mobile-first, responsive design.',
 	buttonLabel: 'View',
 	linkTo: 'https://a-cut-above-autofilm.vercel.app/',
 	github: 'https://github.com/maksymsagadin/a_cut_above_autofilm',
@@ -29,7 +29,7 @@ const projectThree = {
 	topLine: 'React.js',
 	headline: 'Expense Tracker',
 	description:
-		" Developed a Personal Finance Tracker implementing Speechly API to allow a user to add transactions using their voice in order to remove the tedious clicking that comes with adding multiple transaction, as well as Chart.js to allows users to see a breakdown of their finances in a easy to understand visual Doughnut Chart.",
+		'Created a Personal Finance Tracker implementing Speechly API to allow a user to add transactions using their voice in order to remove the tedious clicking that comes with adding multiple transaction, as well as Chart.js to allows users to see a breakdown of their finances in a easy to understand visual Doughnut Chart.',
 	buttonLabel: 'View',
 	linkTo: 'https://income-tracker-reactjs.vercel.app/',
 	github: 'https://github.com/maksymsagadin/income-tracker-reactjs',
