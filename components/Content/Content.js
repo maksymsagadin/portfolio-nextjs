@@ -24,10 +24,8 @@ const Content = ({
 	topLine,
 	headline,
 	description,
-	buttonLabel,
 	img,
 	alt,
-	backgroundColor,
 	linkTo,
     github,
 	inverse,
@@ -76,14 +74,14 @@ const Content = ({
                             </TopText>
                             <Heading
 								initial={initial}
-								transition={{ delay: 0.5, duration: 0.6 }}
+								transition={{ delay: 0.4, duration: 0.6 }}
 								animate={animation}
 							    >
                                 {headline}
                             </Heading>
                             <Description
 								initial={initial}
-								transition={{ delay: 0.7, duration: 0.6 }}
+								transition={{ delay: 0.5, duration: 0.6 }}
 								animate={animation}
 								inverse={inverse}
                                 textinverse={textinverse}
@@ -94,7 +92,7 @@ const Content = ({
                                 <a target='_blank'>
                                     <ProjectButton
                                         initial={initial}
-                                        transition={{ delay: 0.7, duration: 0.6 }}
+                                        transition={{ delay: 0.6, duration: 0.6 }}
                                         animate={animation}
                                         >
                                         {'View Website'}
@@ -105,7 +103,7 @@ const Content = ({
                                 <a target='_blank'>
                                     <ProjectButton
                                         initial={initial}
-                                        transition={{ delay: 0.7, duration: 0.6 }}
+                                        transition={{ delay: 0.6, duration: 0.6 }}
                                         animate={animation}
                                         >
                                         {'Github'}
@@ -119,12 +117,12 @@ const Content = ({
 						transition={transition}
 						animate={animation}
                         >
-                        <Tilt className="Tilt" options={{ max: 20, scale: 1, speed: 200 }}>
+                        <Tilt className="Tilt" options={{ max: 30, scale: 1, speed: 2000, reset: false }}>
                             <ImgWrapper inverse={inverse}>
 								<Img
 									src={img}
 									alt={alt}
-									whileHover={{ scale: 1.1 }}
+									whileHover={{ scale: 1.07 }}
 									transition={{ duration: 0.6 }}
 								/>
 							</ImgWrapper>

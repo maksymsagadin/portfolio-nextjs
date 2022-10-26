@@ -14,8 +14,8 @@ const Skills = ({ id }) => {
           <Heading>Expertise</Heading>
           <SkillsGrid>
             {skillData.map((skill, index) => (
-              <Tilt key={index} className="Tilt" options={{ max: 30, scale: 1, reset: false }}>
-                <SkillWrapper>
+              <Tilt key={index} className="Tilt" options={{ max: 30, scale: 1, speed: 2000, reset: false }}>
+                <SkillWrapper >
                   <Image src={skill.img} width={64} height={64} layout='fixed'/>
                   <SkillText>{skill.text}</SkillText>
                 </SkillWrapper>
