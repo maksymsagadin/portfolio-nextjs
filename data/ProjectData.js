@@ -35,8 +35,8 @@ const projectThree = {
 	github: 'https://github.com/maksymsagadin/income-tracker-reactjs',
 	img: '/projects/expense_tracker.png',
 	backgroundColor: 'linear-gradient(180deg, #3d709b 0% , #020305 100%)',
-
 }
+
 const projectFour = {
 	inverse: 'true',
 	topLine: 'React.js',
@@ -49,7 +49,19 @@ const projectFour = {
 	img: '/projects/uplift.png',
 	alt: 'Exercise API Project',
 	backgroundColor: 'linear-gradient(180deg, #020305 10% , #020305 100%)',
-
 }
 
-export const projectData = [ projectOne, projectTwo, projectThree, projectFour ]
+const projectFive = {
+	topLine: 'Plain Javascript',
+	headline: 'Website Animation Clone',
+	description:
+		'Built a responsive animation website clone using Tailwind CSS and Javascript to showcase a sticky navigation panel, image carousel, scrolling image sequence, video preview selector and a fetch API request that dynamically populates data based on dropdown menu selection.',
+	buttonLabel: 'View',
+	linkTo: 'https://maksym-sagadin-corsair.netlify.app/',
+	github: 'https://github.com/maksymsagadin/corsair-project',
+	img: '/projects/website_animation_project.png',
+	alt: 'Animation Clone Project',
+	backgroundColor: 'linear-gradient(180deg, #020305 10% , #020305 100%)',
+}
+
+export const projectData = [ projectOne, projectTwo, projectThree, projectFour, projectFive ]
