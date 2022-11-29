@@ -13,17 +13,6 @@ export const SectionWrapper = styled(motion.div)`
 	@media screen and (max-width: 768px) {
 		padding: 2.5rem 0rem;
 	}
-	/* &:before {
-		width: 100%;
-		height: 100%;
-		content: '';
-		position: absolute;
-		top: 0;
-		right: 0;
-		background-image: url('/hero-pattern-bg.png');
-		background-size: 100% auto;
-		object-fit: cover;
-	} */
 `
 
 export const ContentRow = styled.div`
@@ -36,7 +25,6 @@ export const ContentRow = styled.div`
 	@media screen and (max-width: 768px) {
 		flex-direction: column-reverse;
         gap: 0rem;
-
 	}
 `
 export const ContentColumn = styled(motion.div)`
@@ -74,9 +62,8 @@ export const TopText = styled(motion.div)`
 	color: ${secondary};
 `
 export const Heading = styled(motion.h2)`
-	margin-bottom: 24px;
-	font-size: 2rem;
-	line-height: 1.1;
+	margin-bottom: 1.5rem;
+	font-size: clamp(1rem, 6vw, 2rem);
 	font-weight: 600;
 	color: ${primary};
 	@media screen and (max-width: 768px) {
@@ -85,7 +72,7 @@ export const Heading = styled(motion.h2)`
 `
 export const Description = styled(motion.p)`
 	margin-bottom: 1.5rem;
-	line-height: 24px;
+	font-size: clamp(1rem, 2vw, 1.3rem);
     color: ${({ textinverse }) => (textinverse ? dark : light)};
 	text-align: ${({ inverse }) => (inverse ? 'left' : 'right')};
 `

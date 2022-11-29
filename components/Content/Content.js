@@ -48,11 +48,11 @@ const Content = ({
 			});
 			return;
 		}
-
-		animation.start({
-			opacity: 0,
-			y: 0,
-		});
+        // Hide content when leaving it's view
+		// animation.start({
+		// 	opacity: 0,
+		// 	y: 0,
+		// });
 	}, [inView, animation])
 
 
@@ -117,16 +117,14 @@ const Content = ({
 						transition={transition}
 						animate={animation}
                         >
-                        <Tilt className="Tilt" options={{ max: 30, scale: 1, speed: 2000, reset: false }}>
-                            <ImgWrapper inverse={inverse}>
-								<Img
-									src={img}
-									alt={alt}
-									whileHover={{ scale: 1.07 }}
-									transition={{ duration: 0.6 }}
-								/>
-							</ImgWrapper>
-                        </Tilt>
+                        <ImgWrapper inverse={inverse}>
+                            <Img
+                                src={img}
+                                alt={alt}
+                                whileHover={{ scale: 1.1 }}
+                                transition={{ duration: 0.6 }}
+                            />
+                        </ImgWrapper>
                     </ContentColumn>
                 </ContentRow>
             </Container>
