@@ -34,3 +34,41 @@ export const Selfie = styled(Image)`
 	border-radius: 0.75rem;
 	overflow: hidden;
 `
+export const PullTabColumn = styled.div`
+	overflow: hidden;
+	display: flex;
+	position: absolute;
+	flex-direction: column;
+	top: 14%;
+	right: 0;
+`
+export const PullTab = styled.li`
+	display: flex;
+	align-items: center;
+	opacity: 50%;
+	width: 160px;
+	height: 60px;
+	padding-left: 1rem;
+	padding-right: 2rem;
+	margin-right: -100px;
+	transition-duration: 600ms;
+	background-color: ${({ color }) => (color ? color : dark)};
+	&:hover {
+		transition-duration: 600ms;
+		margin-right: -5px;
+		opacity: 100%;
+	}
+	&:first-child {
+		border-top-left-radius: 0.75rem;
+	}
+	&:last-child {
+		border-bottom-left-radius: 0.75rem;
+	}
+`
+export const PullTabLink = styled.a`
+	text-decoration: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+`

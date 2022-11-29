@@ -2,8 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import { aboutData } from '../../data/AboutData'
 import { Section, SubHeading, BodyText } from '../../styles/globalStyles'
-import { Wrapper, Row, Column, Selfie } from './AboutStyles'
-
+import { Wrapper, Row, Column, Selfie, PullTabColumn, PullTab, PullTabLink } from './AboutStyles'
+import { FaGithubAlt, FaLinkedinIn, FaFilePdf } from 'react-icons/fa'
 
 const Info = ({ id }) => {
     const { headline, intro, description, } = aboutData
@@ -23,6 +23,30 @@ const Info = ({ id }) => {
 					</Wrapper>
 				</Column>
 			</Row>
+			<PullTabColumn >
+				<ul>
+					<PullTab >
+						<PullTabLink
+							href='https://github.com/maksymsagadin/'
+							target='_blank'
+							rel="noreferrer"
+							>
+							<FaGithubAlt size={30} />
+							Github
+						</PullTabLink>
+					</PullTab>
+					<PullTab >
+						<PullTabLink
+							href='https://www.linkedin.com/in/maksym-sagadin/'
+							target='_blank'
+							rel="noreferrer"
+							>
+							<FaLinkedinIn size={30} />
+							LinkedIn
+						</PullTabLink>
+					</PullTab>
+				</ul>
+			</PullTabColumn>
 		</Section>
     )
 }
