@@ -2,8 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import { aboutData } from '../../data/AboutData'
 import { Section, SubHeading, BodyText } from '../../styles/globalStyles'
-import { Wrapper, Row, Column, Selfie, PullTabColumn, PullTab, PullTabLink } from './AboutStyles'
-import { FaGithubAlt, FaLinkedinIn, FaFilePdf } from 'react-icons/fa'
+import { Wrapper, Row, Column, Selfie, PullTabColumn, PullTab, PullTabLink, PullTabText } from './AboutStyles'
+import { FaGithubAlt, FaLinkedinIn } from 'react-icons/fa'
 
 const Info = ({ id }) => {
     const { headline, intro, description, } = aboutData
@@ -31,8 +31,10 @@ const Info = ({ id }) => {
 							target='_blank'
 							rel="noreferrer"
 							>
-							<FaGithubAlt size={30} />
-							Github
+							<FaGithubAlt color='white' size={30} />
+							<PullTabText>
+								Github
+							</PullTabText>
 						</PullTabLink>
 					</PullTab>
 					<PullTab >
@@ -41,8 +43,10 @@ const Info = ({ id }) => {
 							target='_blank'
 							rel="noreferrer"
 							>
-							<FaLinkedinIn size={30} />
-							LinkedIn
+							<FaLinkedinIn color='white' size={30} />
+							<PullTabText>
+								LinkedIn
+							</PullTabText>
 						</PullTabLink>
 					</PullTab>
 				</ul>

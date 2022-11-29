@@ -41,6 +41,7 @@ export const PullTabColumn = styled.div`
 	flex-direction: column;
 	top: 14%;
 	right: 0;
+	color: ${light} important!;
 `
 export const PullTab = styled.li`
 	display: flex;
@@ -53,6 +54,7 @@ export const PullTab = styled.li`
 	margin-right: -100px;
 	transition-duration: 600ms;
 	background-color: ${({ color }) => (color ? color : dark)};
+	color: ${light};
 	&:hover {
 		transition-duration: 600ms;
 		margin-right: -5px;
@@ -71,4 +73,7 @@ export const PullTabLink = styled.a`
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
+`
+export const PullTabText = styled.p`
+	color: ${({ color }) => (color ? color : light)};
 `
