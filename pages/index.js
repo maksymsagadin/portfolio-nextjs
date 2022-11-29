@@ -14,7 +14,7 @@ export default function Home() {
       <Head>
         <title>Maksym | Front-End Developer</title>
         <meta name="description" content='I’m a front-end web developer specializing in building (and occasionally designing) digital experiences.' />
-        <link rel="icon" href="/star.png" />
+        <link rel="icon" href="/MS.png" />
       </Head>
       <Hero />
       <About id='about' />
