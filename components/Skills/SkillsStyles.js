@@ -8,7 +8,7 @@ export const SkillsGrid = styled.div`
     gap: 2rem;
 	width: 100%;
 	grid-template-columns: repeat(4,2fr);
-    @media screen and (max-width: 940px) {
+    @media screen and (max-width: 1050px) {
 		grid-template-columns: repeat(2, 1fr);
 		justify-content: center;
 		padding-bottom: 2rem;
