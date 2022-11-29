@@ -64,4 +64,4 @@ const projectFive = {
 	backgroundColor: 'linear-gradient(180deg, #020305 10% , #020305 100%)',
 }
 
-export const projectData = [ projectOne, projectTwo, projectThree, projectFour, projectFive ]
+export const projectData = [ projectOne, projectTwo, projectThree ]
