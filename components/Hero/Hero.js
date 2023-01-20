@@ -5,8 +5,7 @@ import {
 	HeroName, 
 	HeroTitle, 
 	HeroText, 
-	ButtonContainer, 
-	ButtonWrapper, 
+	ButtonContainer,
 	HeroButton, 
 	ContactIcon } from './HeroStyles'
 import Image from 'next/image'
@@ -37,11 +36,9 @@ const Hero = () => {
 				<HeroTitle center>{heroData.title}</HeroTitle>
 				<HeroText>{heroData.statement}</HeroText>
 				<ButtonContainer>
-					<ButtonWrapper>
-						<HeroButton onClick={() => setShowModal(true)} className={inView ? '' : 'corner'}>
-							{inView ? <> Get in touch </> : <ContactIcon />}
-						</HeroButton>
-					</ButtonWrapper>
+					<HeroButton onClick={() => setShowModal(true)} className={inView ? '' : 'corner'}>
+						{inView ? <> Get in touch </> : <ContactIcon />}
+					</HeroButton>
 				</ButtonContainer>
 			</Container>
 		</HeroSection>

@@ -50,13 +50,6 @@ export const ButtonContainer = styled.div`
 	height: 150px;
 `
 
-export const ButtonWrapper = styled.div`
-	position: absolute;
-	height: 100vh;
-	width: 100%;
-	left: 0;
-	top: 0;
-`
 
 export const HeroButton = styled(motion.button)`
 	position: absolute;
@@ -65,6 +58,7 @@ export const HeroButton = styled(motion.button)`
 	padding: 15px 20px;
 	bottom: calc(100vh - 100px);
 	right: 50%;
+	bottom: 50%;
 	transform: translate(50%);
 	font-weight: 600;
 	text-transform: uppercase;
@@ -84,8 +78,7 @@ export const HeroButton = styled(motion.button)`
 		background-color: ${primary};
 		color: ${dark};
 		border-radius: 50%;
-		transition: all 0.8s ease-in-out;
-		
+		transition: all 0s ease-in-out;
 	}
 	&:hover {
 		box-shadow: -5px 5px 9px 3px ${primary};
