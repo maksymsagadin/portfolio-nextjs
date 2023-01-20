@@ -36,11 +36,6 @@ const ContactForm = () => {
 		animate: { y: 0, opacity: 1, transition: { delay: 0.3, duration: 0.6 } },
 	}
 
-	// const contactData = {
-	// 	location: 'Located in San Jose, CA',
-	// 	sms: 'Text me at 650-123-1234',
-	// }
-	
 	const formData = [
 		{ label: 'Name', value: 'name', type: 'text', required: 'true' },
 		{ label: 'Email', value: 'email', type: 'email', required: 'true' },
@@ -50,16 +45,8 @@ const ContactForm = () => {
     return (
         <FormSection>
 			<FormRow>
-				{/* <HeroColumn>
-					<ContactInfo>
-						{contactData.sms}
-					</ContactInfo>
-					<ContactInfo>
-						{contactData.location}
-					</ContactInfo>
-				</HeroColumn> */}
 				<FormColumn>
-					<FormTitle>Send an Email</FormTitle>
+					<FormTitle>Get in Touch</FormTitle>
 					<FormWrapper ref={form} onSubmit={sendEmail}>
 						{formData.map((el, index) => (
 							<FormInputRow key={index}>
@@ -73,11 +60,11 @@ const ContactForm = () => {
 							</FormInputRow>
 						))}
 						<FormTextArea
-							placeholder='How can I help?'
+							placeholder='How may I help?'
 							name='textContent'
 							required='true'
 						/>
-						<FormButton type='submit' value='Send'>Send Email</FormButton>
+						<FormButton type='submit' value='Send'>Send</FormButton>
 					</FormWrapper>
 					{error && (
 						<FormMessage
