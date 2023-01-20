@@ -57,13 +57,9 @@ export const SubHeading = styled.h2`
 export const BodyText = styled.p`
 	margin-bottom: 1.5rem;
 	color: ${({ inverse }) => (inverse ? primary : light)};
-	/* text-indent: 2rem; */
-	white-space: break-spaces;
+	text-indent: 1rem;
 	font-size: clamp(1rem, 2vw, 1.3rem);
-	text-align: ${({ center }) => (center ? 'center' : 'left')};
-	@media screen and (max-width: 768px) {
-		text-align: center;
-	}
+	text-align: ${({ center }) => (center ? 'center' : 'justify')};
 `
 export const Button = styled.button`
 	border-radius: 0.5rem;
