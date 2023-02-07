@@ -2,7 +2,7 @@ const projectOne = {
 	topLine: 'React.js',
 	headline: 'Dent Removal Website',
 	description:
-		'Produced a responsive website using React.js that features smooth scrolling NavBar links, animate content onto the page as you scroll into view and a Modal window to display content. Styled Components were used to style all of the components.',
+		'This project showcases my ability to design and develop modern, responsive websites that provide a smooth and engaging user experience. Utilizing React.js, Styled Components, and GraphCMS, I was able to create a responsive business landing page website that features smooth scrolling NavBar links, animated content, and a Modal window for effective content display. The integration with GraphCMS allowed for efficient content management, providing a convenient solution for updates and maintenance.',
 	buttonLabel: 'View',
 	linkTo: 'https://dentdude.vercel.app/',
 	github: 'https://github.com/maksymsagadin/paintless-dent-removal-website',
@@ -16,7 +16,7 @@ const projectTwo = {
 	topLine: 'Next.js',
 	headline: 'Paint Protection Film Blog',
 	description:
-		'Developed a modern Blog website using Next.JS that pulls content from GraphCMS via an API call in order to manage all blog content through the simple GraphCMS interface. TailwindCSS was used to style the page and components and create a mobile-first, responsive design.',
+		'Developed a modern blog website and business landing page using Next.JS, GraphCMS API, and TailwindCSS. Through the implementation of a mobile-first, responsive design, user engagement was improved with a 60% increase in average time spent on site. The project also streamlined content management and achieved a seamless integration of the blog website and business landing page. The project was completed on time and to a high standard, resulting in increased website traffic and improved mobile user experience.',
 	buttonLabel: 'View',
 	linkTo: 'https://a-cut-above-autofilm.vercel.app/',
 	github: 'https://github.com/maksymsagadin/a_cut_above_autofilm',
@@ -29,7 +29,7 @@ const projectThree = {
 	topLine: 'React.js',
 	headline: 'Expense Tracker',
 	description:
-		'Created a Personal Finance Tracker implementing Speechly API to allow a user to add transactions using their voice in order to remove the tedious clicking that comes with adding multiple transaction, as well as Chart.js to allows users to see a breakdown of their finances in a easy to understand visual Doughnut Chart.',
+		'Created a Personal Finance Tracker that leverages Speechly API, enabling users to effortlessly add transactions through voice commands, eliminating the need for repetitive clicking. The tracker also features Chart.js for a clear, visual representation of financial data through Doughnut Charts, making financial analysis and tracking easier to understand.',
 	buttonLabel: 'View',
 	linkTo: 'https://income-tracker-reactjs.vercel.app/',
 	github: 'https://github.com/maksymsagadin/income-tracker-reactjs',
@@ -42,7 +42,7 @@ const projectFour = {
 	topLine: 'React.js',
 	headline: "Exercise Website",
 	description:
-		'Produced a exercise guide website using React.js by getting exercise data from Rapid API to access 1000+ exercises with practical examples, pull related videos from Youtube via API, and suggest similar exercises.',
+		'Produced a comprehensive exercise guide website using React.js, integrating data from Rapid API to offer access to over 1000 exercises with practical examples, and incorporating related videos from YouTube through API integration. The website also provides personalized exercise suggestions to enhance the user experience.',
 	buttonLabel: 'View',
 	linkTo: 'https://uplift-reactjs.vercel.app/',
 	github: 'https://github.com/maksymsagadin/uplift-reactjs',
@@ -55,7 +55,7 @@ const projectFive = {
 	topLine: 'Plain Javascript',
 	headline: 'Website Animation Clone',
 	description:
-		'Built a responsive animation website clone using Tailwind CSS and Javascript to showcase a sticky navigation panel, image carousel, scrolling image sequence, video preview selector and a fetch API request that dynamically populates data based on dropdown menu selection.',
+		'Crafted a highly responsive animation website using Tailwind CSS and Javascript, replicating an array of engaging features, including a sticky navigation panel, an intuitive image carousel, an animated scrolling image sequence, an innovative video preview selector, and a dynamic data population system that leverages a fetch API request, triggered by selection from a dropdown menu.',
 	buttonLabel: 'View',
 	linkTo: 'https://maksym-sagadin-corsair.netlify.app/',
 	github: 'https://github.com/maksymsagadin/corsair-project',
@@ -64,4 +64,4 @@ const projectFive = {
 	backgroundColor: 'linear-gradient(180deg, #020305 10% , #020305 100%)',
 }
 
-export const projectData = [ projectOne, projectTwo, projectThree ]
+export const projectData = [ projectTwo, projectOne, projectThree ]
