@@ -18,7 +18,7 @@ const projectTwo = {
 	description:
 		'Developed a modern blog website and business landing page using Next.JS, GraphCMS API, and TailwindCSS. Through the implementation of a mobile-first, responsive design, user engagement was improved with a 60% increase in average time spent on site. The project also streamlined content management and achieved a seamless integration of the blog website and business landing page. The project was completed on time and to a high standard, resulting in increased website traffic and improved mobile user experience.',
 	buttonLabel: 'View',
-	linkTo: 'https://a-cut-above-autofilm.vercel.app/',
+	linkTo: 'https://www.acutaboveaf.com/',
 	github: 'https://github.com/maksymsagadin/a_cut_above_autofilm',
 	img: '/projects/nextjs_blog.png',
 	alt: 'GraphCMS Nextjs Blog',
