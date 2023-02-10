@@ -29,7 +29,7 @@ const projectThree = {
 	topLine: 'React.js',
 	headline: 'Expense Tracker',
 	description:
-		'Created a Personal Finance Tracker that leverages Speechly API, enabling users to effortlessly add transactions through voice commands, eliminating the need for repetitive clicking. The tracker also features Chart.js for a clear, visual representation of financial data through Doughnut Charts, making financial analysis and tracking easier to understand.',
+		'Crafted a Personal Finance Tracker that streamlines the transaction process, empowering users to add financial entries with ease through the integration of Speechly API. This user-friendly feature eliminates the tedious task of manual data entry, allowing for quick and efficient financial tracking. The tracker also offers a clear visual representation of financial data, utilizing Chart.js and Doughnut Charts for easy financial analysis and insight.',
 	buttonLabel: 'View',
 	linkTo: 'https://income-tracker-reactjs.vercel.app/',
 	github: 'https://github.com/maksymsagadin/income-tracker-reactjs',
@@ -56,7 +56,7 @@ const projectFive = {
 	topLine: 'Plain Javascript',
 	headline: 'Website Animation Clone',
 	description:
-		'Crafted a highly responsive animation website using Tailwind CSS and Javascript, replicating an array of engaging features, including a sticky navigation panel, an intuitive image carousel, an animated scrolling image sequence, an innovative video preview selector, and a dynamic data population system that leverages a fetch API request, triggered by selection from a dropdown menu.',
+		'Developed a cutting-edge, responsive animation website that captures the essence of user engagement and interaction. Leveraging the power of Tailwind CSS and Javascript, I expertly replicated features such as a sticky navigation panel, an intuitive image carousel, an animated scrolling image sequence, and a dynamic video preview selector. The website also features a fetch API request, triggered by selection from a dropdown menu, that populates data dynamically, providing a seamless and dynamic user experience.',
 	buttonLabel: 'View',
 	linkTo: 'https://maksym-sagadin-corsair.netlify.app/',
 	github: 'https://github.com/maksymsagadin/corsair-project',
