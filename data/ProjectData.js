@@ -1,8 +1,8 @@
 const projectOne = {
 	topLine: 'React.js',
-	headline: 'Dent Removal Website',
+	headline: 'Dents N Dings',
 	description:
-		'This project showcases my ability to design and develop modern, responsive websites that provide a smooth and engaging user experience. Utilizing React.js, Styled Components, and GraphCMS, I was able to create a responsive business landing page website that features smooth scrolling NavBar links, animated content, and a Modal window for effective content display. The integration with GraphCMS allowed for efficient content management, providing a convenient solution for updates and maintenance.',
+		'This project highlights my expertise in crafting modern, user-friendly websites that engage and retain users. By using React.js, Styled Components, and GraphCMS, I designed and developed a responsive business landing page website that boasts a smooth scrolling NavBar with animated content and a Modal window for optimal content presentation. The integration with GraphCMS made for effortless content management, enabling quick and easy updates through a user-friendly interface. To enhance data query management, I also utilized Apollo Client to ensure seamless and efficient query calls.',
 	buttonLabel: 'View',
 	linkTo: 'https://dentdude.vercel.app/',
 	github: 'https://github.com/maksymsagadin/paintless-dent-removal-website',
@@ -14,7 +14,7 @@ const projectOne = {
 const projectTwo = {
 	inverse: 'true',
 	topLine: 'Next.js',
-	headline: 'Paint Protection Film Blog',
+	headline: 'A Cut Above',
 	description:
 		'Developed a modern blog website and business landing page using Next.JS, GraphCMS API, and TailwindCSS. Through the implementation of a mobile-first, responsive design, user engagement was improved with a 60% increase in average time spent on site. The project also streamlined content management and achieved a seamless integration of the blog website and business landing page. The project was completed on time and to a high standard, resulting in increased website traffic and improved mobile user experience.',
 	buttonLabel: 'View',
@@ -26,7 +26,6 @@ const projectTwo = {
 }
 
 const projectThree = {
-	inverse: 'true',
 	topLine: 'React.js',
 	headline: 'Expense Tracker',
 	description:
@@ -53,6 +52,7 @@ const projectFour = {
 }
 
 const projectFive = {
+	inverse: 'true',
 	topLine: 'Plain Javascript',
 	headline: 'Website Animation Clone',
 	description:
@@ -65,4 +65,4 @@ const projectFive = {
 	backgroundColor: 'linear-gradient(180deg, #020305 10% , #020305 100%)',
 }
 
-export const projectData = [ projectTwo, projectOne, projectThree, projectFive ]
+export const projectData = [ projectOne, projectTwo, projectThree, projectFive ]
