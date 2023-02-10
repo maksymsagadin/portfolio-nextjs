@@ -26,6 +26,7 @@ const projectTwo = {
 }
 
 const projectThree = {
+	inverse: 'true',
 	topLine: 'React.js',
 	headline: 'Expense Tracker',
 	description:
@@ -64,4 +65,4 @@ const projectFive = {
 	backgroundColor: 'linear-gradient(180deg, #020305 10% , #020305 100%)',
 }
 
-export const projectData = [ projectTwo, projectOne, projectThree ]
+export const projectData = [ projectTwo, projectOne, projectThree, projectFive ]
