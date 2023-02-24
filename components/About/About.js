@@ -10,10 +10,10 @@ const Info = ({ id }) => {
 
     return (
         <Section id={id} >
-			<Image alt='Background' src={aboutData.bgImg} priority layout='fill' objectFit='cover' objectPosition='center'/>
+			<Image alt='Background' src={aboutData.bgImg} layout='fill' objectFit='cover' objectPosition='center'/>
 			<Row>
 				<Column>
-					<Selfie alt="Maksym Sagadin" src={aboutData.heroImg} height={500} width={500} objectFit='cover' objectPosition='right'  quality={100} />
+					<Selfie alt="Maksym Sagadin" src={aboutData.heroImg} quality={100} height={500} width={500} objectFit='cover' objectPosition='center top' />
 				</Column>
 				<Column>
 					<Wrapper>
