@@ -5,7 +5,7 @@ import { Link as LinkScroll } from 'react-scroll'
 import { light, dark, primary } from '../../data/GlobalData'
 
 export const Nav = styled.nav`
-	background: ${({ hide }) => (hide ? 'transparent' : dark)};
+	background: ${({ hide }) => (hide ? 'transparent' : 'rgba(64,81,78,0.75)')};
 	margin-top: -100px;
 	height: 100px;
 	display: flex;
