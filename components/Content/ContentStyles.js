@@ -40,7 +40,6 @@ export const ContentColumn = styled(motion.div)`
 	}
 `
 export const TextWrapper = styled.div`
-	max-width: 540px;
 	padding-top: 0;
 	text-align: ${({ inverse }) => (inverse ? 'left' : 'right')};
 	@media screen and (max-width: 768px) {
@@ -114,7 +113,6 @@ export const ProjectButton = styled(motion.button)`
 export const ImgWrapper = styled(motion.div)`
 	display: flex;
 	justify-content: ${({ inverse }) => (inverse ? 'flex-end' : 'flex-start')};
-    padding: 1rem;
 	border-radius: 0.75rem;
 	position: relative;
 	
@@ -125,7 +123,6 @@ export const Img = styled(motion.img)`
 	border-radius: 0.75rem;
 	max-width: 100%;
 	object-fit: cover;
-	height: 300px;
-	max-height: 600px;
+	max-height: 700px;
 	z-index: 1;
 `

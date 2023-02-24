@@ -22,26 +22,24 @@ export const ImageFilter = styled.div`
 
 export const HeroName = styled.span`
 	color: ${primary};
-	opacity: 90%;
+	opacity: 80%;
 	font-weight: 600;
 `
 
 export const HeroTitle = styled.h3`
-	margin-bottom: 2rem;
-	font-size: clamp(1rem, 2vw, 2rem);
-	letter-spacing: 4px;
+	margin-bottom: 1.25rem;
+	font-size: clamp(2rem, 6vw, 4rem);
+	letter-spacing: 5px;
 	font-weight: 600;
 	color: ${({ inverse }) => (inverse ? dark : light )};
 	text-align: center;
 `
 export const HeroText = styled.p`
-	font-size: clamp(1rem, 1vw, 2rem);
-	line-height: 24px;
+	margin-bottom: 1rem;
+	font-size: clamp(1rem, 1.5vw, 4rem);
 	text-align: center;
 	letter-spacing: 2px;
 	color: ${light};
-	@media screen and (max-width: 768px) {
-	}
 `
 export const ButtonContainer = styled.div`
 	z-index: 50;
@@ -53,6 +51,7 @@ export const ButtonContainer = styled.div`
 
 export const HeroButton = styled(motion.button)`
 	position: absolute;
+	font-size: clamp(1rem, 1vw, 1.5rem);
 	width: 250px;
 	margin: 0 auto;
 	padding: 15px 20px;

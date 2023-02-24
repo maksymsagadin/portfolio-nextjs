@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
 export const Container = styled.div`
 	width: 100%;
     position: relative;
-	max-width: 1300px;
+	max-width: 1750px;
 	margin: 0 auto;
 	padding: 0 60px;
 	@media screen and (max-width: 960px) {
@@ -40,7 +40,7 @@ export const Heading = styled.h1`
 	letter-spacing: 4px;
 	text-align: ${({ center }) => (center ? 'center' : 'left')};
 	@media screen and (max-width: 940px) {
-		padding-bottom: ${({ main }) => (main ? '0' : '2rem')};
+		padding-bottom: ${({ main }) => (main ? '0' : '1.5rem')};
 		text-align: center;
 	}
 `
