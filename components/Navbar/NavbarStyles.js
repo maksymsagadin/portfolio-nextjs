@@ -55,9 +55,6 @@ export const StartLink = styled(LinkScroll)`
 		color: ${primary};
 		cursor: pointer;
 	}
-	@media screen and (max-width: 960px) {
-		display: none;
-	}
 `
 
 
