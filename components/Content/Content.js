@@ -48,11 +48,6 @@ const Content = ({
 			});
 			return;
 		}
-        // Hide content when leaving it's view
-		// animation.start({
-		// 	opacity: 0,
-		// 	y: 0,
-		// });
 	}, [inView, animation])
 
 
