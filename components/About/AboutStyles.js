@@ -25,7 +25,6 @@ export const Column = styled.div`
 `
 export const Wrapper = styled.div`
 	padding: 0 3rem;
-	max-width: 540px;
 	@media screen and (max-width: 768px) {
 		padding: 1rem;
 	}
