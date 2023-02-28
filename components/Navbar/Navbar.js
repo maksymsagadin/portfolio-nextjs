@@ -31,7 +31,7 @@ const Navbar = ({ hide }) => {
             <Image src={logo} height={75} width={75} quality={100} onClick={scroll.scrollToTop}/>
           </NavLogo>
           {hide && (
-            <StartLink to="about" offset={-50} smooth="true" duration={duration}>
+            <StartLink to="about" offset={-50} smooth={true} duration={duration}>
               <ImMoveDown/>
             </StartLink>
           )}
@@ -48,8 +48,8 @@ const Navbar = ({ hide }) => {
                     <NavLinks
                       spy={true}
                       duration={duration}
-                      smooth="true"
-                      exact="true"
+                      smooth={true}
+                      exact='true'
                       offset={offset}
                       onClick={() => setShow(false)}
                       to={el.to}

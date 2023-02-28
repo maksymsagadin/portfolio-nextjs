@@ -62,7 +62,7 @@ const ContactForm = () => {
 						<FormTextArea
 							placeholder='How may I help?'
 							name='textContent'
-							required='true'
+							required={true}
 						/>
 						<FormButton type='submit' value='Send'>Send</FormButton>
 					</FormWrapper>
