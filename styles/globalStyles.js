@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Jost', sans-serif;
 	font-weight: 400;
   }
 `
@@ -33,7 +33,7 @@ export const Section = styled.section`
 `
 export const Heading = styled.h1`
 	font-size: clamp(2.5rem, 7vw, 4.5rem);
-	padding: ${({ main }) => (main ? '4rem' : '0 0 2rem 0')};
+	padding: ${({ main }) => (main ? '4rem' : '0 0 1.5rem 0')};
 	background-color: ${({ main }) => (main ? dark : 'none')};
 	color: ${({ inverse }) => (inverse ? dark : light)};
 	width: 100%;

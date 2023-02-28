@@ -27,7 +27,7 @@ export const HeroName = styled.span`
 `
 
 export const HeroTitle = styled.h3`
-	margin-bottom: 1.25rem;
+	margin-bottom: 2rem;
 	font-size: clamp(2rem, 6vw, 4rem);
 	letter-spacing: 5px;
 	font-weight: 600;
@@ -35,10 +35,11 @@ export const HeroTitle = styled.h3`
 	text-align: center;
 `
 export const HeroText = styled.p`
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 	font-size: clamp(1rem, 1.5vw, 4rem);
 	text-align: center;
 	letter-spacing: 2px;
+	font-weight: 500;
 	color: ${light};
 `
 export const ButtonContainer = styled.div`
