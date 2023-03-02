@@ -9,10 +9,12 @@ export const HeroSection = styled.section`
 	height: 100vh;
 	display: flex;
 	width: 100%;
+	overflow: auto;
 	align-items: center;
 	justify-content: center;
 	@media screen and (min-width: 600px) {
 		height: 100dvh;
+		width: 100dvw;
 	}
 `
 
