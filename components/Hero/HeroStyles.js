@@ -11,6 +11,9 @@ export const HeroSection = styled.section`
 	width: 100%;
 	align-items: center;
 	justify-content: center;
+	@media screen and (min-width: 600px) {
+		height: 100dvh;
+	}
 `
 
 export const ImageFilter = styled.div`
