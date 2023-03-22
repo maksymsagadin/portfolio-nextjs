@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 import { light, dark, primary, secondary } from '../../data/GlobalData'
