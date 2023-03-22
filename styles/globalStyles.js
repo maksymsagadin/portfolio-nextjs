@@ -33,16 +33,12 @@ export const Section = styled.section`
 `
 export const Heading = styled.h1`
 	font-size: clamp(2.5rem, 7vw, 4.5rem);
-	padding: ${({ main }) => (main ? '4rem' : '0 0 1.5rem 0')};
+	padding: ${({ main }) => (main ? '4rem' : '1.5rem 0 1.5rem 0')};
 	background-color: ${({ main }) => (main ? dark : 'none')};
 	color: ${({ inverse }) => (inverse ? dark : light)};
 	width: 100%;
 	letter-spacing: 4px;
 	text-align: ${({ center }) => (center ? 'center' : 'left')};
-	@media screen and (max-width: 940px) {
-		padding-bottom: ${({ main }) => (main ? '0' : '1.5rem')};
-		text-align: center;
-	}
 `
 export const SubHeading = styled.h2`
 	margin-bottom: 2rem;
