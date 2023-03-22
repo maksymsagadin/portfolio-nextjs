@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
-import { projectData } from '../../data/ProjectData'
-import { Section, Container } from '../../styles/globalStyles'
+import { Container } from '../../styles/globalStyles'
 import {
     SectionWrapper,
     ContentRow,
@@ -15,10 +13,8 @@ import {
     Description,
     ProjectButton,
 } from './ContentStyles'
-
 import { useInView } from 'react-intersection-observer'
 import { useAnimation } from 'framer-motion'
-import Tilt from 'react-tilt'
 
 const Content = ({ 
 	topLine,
