@@ -1,7 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import bgimg from '/public/backgrounds/bg-dark.png'
-
 import Hero from '../components/Hero/Hero'
 import About from '../components/About/About'
 import Skills from '../components/Skills/Skills'
