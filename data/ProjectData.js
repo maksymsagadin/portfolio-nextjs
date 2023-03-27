@@ -6,7 +6,7 @@ const projectOne = {
 	buttonLabel: 'View',
 	linkTo: 'https://www.dentsndings.com/',
 	github: 'https://github.com/maksymsagadin/dents-n-dings',
-	img: '/projects/pdr_site.png',
+	img: '/projects/DentsNDings.jpg',
 	alt: 'React Animated Site',
 	backgroundColor: 'linear-gradient(180deg, #f3f4f6 0% , #b4b4bc 100%)',
 }
