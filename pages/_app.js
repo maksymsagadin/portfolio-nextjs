@@ -1,4 +1,5 @@
-import GlobalStyle from "../styles/globalStyles"
+import GlobalStyle from '../styles/globalStyles'
+import { Analytics } from '@vercel/analytics/react'
 import './_app.css'
 
 
@@ -7,6 +8,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <GlobalStyle />
       <Component {...pageProps} />
+      <Analytics />
     </>
   )
 }
