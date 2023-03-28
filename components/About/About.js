@@ -13,7 +13,7 @@ const Info = ({ id }) => {
 			<Image alt='Background' src={aboutData.bgImg} layout='fill' objectFit='cover' objectPosition='center'/>
 			<Row>
 				<Column>
-					<Selfie alt="Maksym Sagadin" src={aboutData.heroImg} quality={100} height={500} width={500} objectFit='cover' objectPosition='center top' />
+					<Selfie alt="Maksym Sagadin" src={aboutData.heroImg} quality={100} height={500} width={500} objectFit='cover' objectPosition='center' />
 				</Column>
 				<Column>
 					<Wrapper>
