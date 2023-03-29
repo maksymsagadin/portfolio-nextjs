@@ -25,10 +25,16 @@ export const Container = styled.div`
 
 export const Section = styled.section`
     position: relative;
-	padding: 7rem 2rem;
+	padding: 2rem;
 	background: ${light};
-	@media screen and (max-width: 940px) {
-		padding: 90px 20px;
+	@media screen and (min-width: 900px) {
+		padding: 4rem;
+	}
+	@media screen and (min-width: 2000px) {
+		padding: 6rem 15rem;
+	}
+	@media screen and (min-width: 3000px) {
+		padding: 8rem 20rem;
 	}
 `
 export const Heading = styled.h1`
@@ -51,11 +57,13 @@ export const SubHeading = styled.h2`
 	}
 `
 export const BodyText = styled.p`
-	margin-bottom: 1.5rem;
 	color: ${({ inverse }) => (inverse ? primary : light)};
 	text-indent: 1rem;
 	font-size: clamp(1rem, 2vw, 1.3rem);
 	text-align: ${({ center }) => (center ? 'center' : 'justify')};
+	&:first-of-type {
+        margin-bottom: 1rem;
+    }
 `
 export const Button = styled.button`
 	border-radius: 0.5rem;
