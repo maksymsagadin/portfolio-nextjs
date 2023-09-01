@@ -16,7 +16,7 @@ const Skills = ({ id }) => {
             {skillData.map((skill, index) => (
               <Tilt key={index} className="Tilt" options={{ max: 30, transition: true, scale: 1, speed: 3000, reset: false }}>
                 <SkillWrapper >
-                  <Image src={skill.img} alt={skill.text} width={64} height={64} layout='fixed'/>
+                  <Image src={skill.img} alt={skill.text} loading="lazy" width={64} height={64} layout='fixed'/>
                   <SkillText>{skill.text}</SkillText>
                 </SkillWrapper>
               </Tilt>
