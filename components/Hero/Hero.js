@@ -10,7 +10,7 @@ import {
 	ContactIcon } from './HeroStyles'
 import Image from 'next/image'
 import { Container, Heading } from '../../styles/globalStyles'
-import bgimg from '/public/backgrounds/bg-blue.jpg'
+import bgimg from '/public/backgrounds/bg-blue.jpeg'
 import Navbar from '../Navbar/Navbar'
 import Modal from '../Modal/Modal'
 import ContactForm from '../ContactForm/ContactForm'
