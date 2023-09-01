@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { Section, Container, Heading } from '../../styles/globalStyles'
 import { SkillsGrid, SkillWrapper, SkillText } from './SkillsStyles'
 import { skillData } from '../../data/SkillData'
-import bgimg from '/public/backgrounds/bg-blue.jpg'
+import bgimg from '/public/backgrounds/bg-blue.jpeg'
 import Tilt from 'react-tilt'
 
 const Skills = ({ id }) => {
