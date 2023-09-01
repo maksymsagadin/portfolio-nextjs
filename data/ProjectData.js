@@ -7,7 +7,7 @@ const projectOne = {
 	buttonLabel: 'View',
 	linkTo: 'https://www.dentsndings.com/',
 	github: 'https://github.com/maksymsagadin/dents-n-dings',
-	img: '/projects/DentsNDings.jpg',
+	img: '/projects/DentsNDings.jpeg',
 	alt: 'React Animated PDR Business Site',
 	backgroundColor: 'linear-gradient(180deg, #f3f4f6 0% , #b4b4bc 100%)',
 }
@@ -20,7 +20,7 @@ const projectTwo = {
 	buttonLabel: 'View',
 	linkTo: 'https://www.acutaboveaf.com/',
 	github: 'https://github.com/maksymsagadin/a-cut-above-autofilm',
-	img: '/projects/ACA-blog.jpg',
+	img: '/projects/ACA-blog.jpeg',
 	alt: 'GraphCMS Nextjs PPF Vinyl Blog Site',
 	backgroundColor: 'linear-gradient(180deg, #b4b4bc 0% , #3d709b 100%)',
 }
@@ -33,7 +33,7 @@ const projectThree = {
 	buttonLabel: 'View',
 	linkTo: 'https://www.autojournal.pro/',
 	github: 'https://github.com/maksymsagadin/autojournal',
-	img: '/projects/AJ.jpg',
+	img: '/projects/AutoJournal.jpeg',
 	alt: 'AutoJournal Next.js Maintenance Log',
 	backgroundColor: 'linear-gradient(180deg, #3d709b 0% , #020305 100%)',
 }
