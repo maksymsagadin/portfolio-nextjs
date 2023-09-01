@@ -36,7 +36,8 @@ export const Selfie = styled(Image)`
 export const PullTabColumn = styled.div`
 	overflow: hidden;
 	display: flex;
-	position: absolute;
+	position: fixed;
+	z-index: 1000;
 	flex-direction: column;
 	top: 14%;
 	right: 0;
@@ -50,14 +51,14 @@ export const PullTab = styled.li`
 	height: 60px;
 	padding-left: 1rem;
 	padding-right: 2rem;
-	margin-right: -100px;
-	transition-duration: 600ms;
+	transform: translateX(100px);
+	transition: transform 600ms, opacity 600ms;
 	background-color: ${({ color }) => (color ? color : dark)};
 	color: ${light};
 	&:hover {
-		transition-duration: 600ms;
-		margin-right: -5px;
+		transform: translateX(5px);
 		opacity: 100%;
+		border-radius: 0.75rem;
 	}
 	&:first-child {
 		border-top-left-radius: 0.75rem;
