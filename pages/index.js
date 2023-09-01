@@ -10,7 +10,6 @@ export default function Home() {
     <div>
       <Head>
         <title>Maksym | Front-End Developer</title>
-        <html lang="en" />
         <meta name="og:locale" content="en_US" />
         <meta name="description" content='I’m a front-end web developer specializing in building (and occasionally designing) digital experiences.' />
         <meta name="keywords" content="Web Development, Front-end, Fullstack, JavaScript, Typescript React, Python, Next.js" />
