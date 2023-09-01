@@ -51,16 +51,20 @@ export const TextWrapper = styled.div`
 	}
 `
 export const TopText = styled(motion.div)`
-	padding-top: 2rem;
 	font-size: 1rem;
 	line-height: 16px;
 	font-weight: 700;
 	letter-spacing: 1.4px;
-	margin-bottom: 1.3rem;
+	padding-bottom: 0.75rem;
+	margin-bottom: 0.75rem;
+	border-bottom: 2px solid ${primary};
 	color: ${secondary};
 `
 export const Heading = styled(motion.h2)`
-	margin-bottom: 1.5rem;
+	padding-bottom: 0.75rem;
+	margin-bottom: 0.75rem;
+	padding-top: 2rem;
+	border-bottom: 2px solid ${primary};
 	font-size: clamp(1rem, 6vw, 2rem);
 	font-weight: 600;
 	color: ${primary};

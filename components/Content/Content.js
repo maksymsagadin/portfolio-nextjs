@@ -56,13 +56,6 @@ const Content = ({
 						animate={animation}
                         >
                         <TextWrapper inverse={inverse}>
-                            <TopText 
-                                initial={initial}
-								transition={{ delay: 0.3, duration: 0.6 }}
-								animate={animation}
-                                >
-                                {topLine}
-                            </TopText>
                             <Heading
 								initial={initial}
 								transition={{ delay: 0.4, duration: 0.6 }}
@@ -70,6 +63,13 @@ const Content = ({
 							    >
                                 {headline}
                             </Heading>
+                            <TopText 
+                                initial={initial}
+								transition={{ delay: 0.3, duration: 0.6 }}
+								animate={animation}
+                                >
+                                {topLine}
+                            </TopText>
                             <Description
 								initial={initial}
 								transition={{ delay: 0.5, duration: 0.6 }}
@@ -112,7 +112,7 @@ const Content = ({
                             <Img
                                 src={img}
                                 alt={alt}
-                                whileHover={{ scale: 1.1 }}
+                                whileHover={{ scale: 1.05 }}
                                 transition={{ duration: 0.6 }}
                             />
                         </ImgWrapper>
