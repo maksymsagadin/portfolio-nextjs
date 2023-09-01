@@ -1,5 +1,6 @@
 const projectOne = {
-	topLine: 'React.js',
+	inverse: 'true',
+	topLine: 'React.js, Apollo, Styled Components, Framer Motion',
 	headline: 'Dents N Dings',
 	description:
 		'This project highlights my expertise in crafting modern, user-friendly websites that engage and retain users. By using React.js, Styled Components, and GraphCMS, I designed and developed a responsive business landing page website that boasts a smooth scrolling NavBar with animated content and a Modal window for optimal content presentation. The integration with GraphCMS made for effortless content management, enabling quick and easy updates through a user-friendly interface. To enhance data query management, I also utilized Apollo Client to ensure seamless and efficient query calls.',
@@ -7,33 +8,33 @@ const projectOne = {
 	linkTo: 'https://www.dentsndings.com/',
 	github: 'https://github.com/maksymsagadin/dents-n-dings',
 	img: '/projects/DentsNDings.jpg',
-	alt: 'React Animated Site',
+	alt: 'React Animated PDR Business Site',
 	backgroundColor: 'linear-gradient(180deg, #f3f4f6 0% , #b4b4bc 100%)',
 }
 
 const projectTwo = {
-	inverse: 'true',
-	topLine: 'Next.js',
+	topLine: 'Next.js, GraphCMS, TailwindCSS, GraphQL, Vercel',
 	headline: 'A Cut Above',
 	description:
 		'Developed a modern blog website and business landing page using Next.JS, GraphCMS API, and TailwindCSS. Through the implementation of a mobile-first, responsive design, user engagement was improved with a 60% increase in average time spent on site. The project also streamlined content management and achieved a seamless integration of the blog website and business landing page. The project was completed on time and to a high standard, resulting in increased website traffic and improved mobile user experience.',
 	buttonLabel: 'View',
 	linkTo: 'https://www.acutaboveaf.com/',
 	github: 'https://github.com/maksymsagadin/a-cut-above-autofilm',
-	img: '/projects/nextjs_blog.png',
-	alt: 'GraphCMS Nextjs Blog',
+	img: '/projects/ACA-blog.jpg',
+	alt: 'GraphCMS Nextjs PPF Vinyl Blog Site',
 	backgroundColor: 'linear-gradient(180deg, #b4b4bc 0% , #3d709b 100%)',
 }
 
 const projectThree = {
-	topLine: 'React.js',
-	headline: 'Expense Tracker',
+	topLine: 'Next.js, Material UI, TypeScript, NextAuth, MongoDB',
+	headline: 'AutoJournal',
 	description:
-		'Crafted a Personal Finance Tracker that streamlines the transaction process, empowering users to add financial entries with ease through the integration of Speechly API. This user-friendly feature eliminates the tedious task of manual data entry, allowing for quick and efficient financial tracking. The tracker also offers a clear visual representation of financial data, utilizing Chart.js and Doughnut Charts for easy financial analysis and insight.',
+		'AutoJournal is a comprehensive vehicle maintenance and tracking application designed to simplify and enhance the way vehicle owners manage their vehicles maintenance, upgrades, and repairs. Key features include detailed journal entries, cost tracking, visual data representation through charts, and the ability to import and export data for seamless integration with other tools. One of the significant achievements of AutoJournal is its user-friendly interface, which makes it accessible to users with varying levels of technical expertise. Additionally, the application is built with a mobile-responsive design, ensuring a seamless experience across all devices. By providing a centralized platform for all vehicle-related information, AutoJournal helps users to stay organized, make informed decisions, and ultimately extend the lifespan of their vehicles.',
 	buttonLabel: 'View',
-	linkTo: 'https://income-tracker-reactjs.vercel.app/',
-	github: 'https://github.com/maksymsagadin/income-tracker-reactjs',
-	img: '/projects/expense_tracker.png',
+	linkTo: 'https://www.autojournal.pro/',
+	github: 'https://github.com/maksymsagadin/autojournal',
+	img: '/projects/AJ.jpg',
+	alt: 'AutoJournal Next.js Maintenance Log',
 	backgroundColor: 'linear-gradient(180deg, #3d709b 0% , #020305 100%)',
 }
 
@@ -65,4 +66,4 @@ const projectFive = {
 	backgroundColor: 'linear-gradient(180deg, #020305 10% , #020305 100%)',
 }
 
-export const projectData = [ projectOne, projectTwo, projectThree ]
+export const projectData = [ projectThree, projectOne, projectTwo ]
