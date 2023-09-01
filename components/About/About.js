@@ -9,20 +9,23 @@ const Info = ({ id }) => {
     const { headline, intro, description, } = aboutData
 
     return (
-        <Section id={id} >
-			<Image alt='Background' src={aboutData.bgImg} layout='fill' objectFit='cover' objectPosition='center'/>
-			<Row>
-				<Column>
-					<Selfie alt="Maksym Sagadin" src={aboutData.heroImg} quality={100} height={500} width={500} objectFit='cover' objectPosition='center' />
-				</Column>
-				<Column>
-					<Wrapper>
-						<SubHeading>{headline}</SubHeading>
-						<BodyText>{intro}</BodyText>
-						<BodyText>{description}</BodyText>
-					</Wrapper>
-				</Column>
-			</Row>
+		<>
+			<Section id={id} >
+				<Image alt='Background' src={aboutData.bgImg} layout='fill' objectFit='cover' objectPosition='center'/>
+				<Row>
+					<Column>
+						<Selfie alt="Maksym Sagadin" src={aboutData.heroImg} quality={100} height={500} width={500} objectFit='cover' objectPosition='center' />
+					</Column>
+					<Column>
+						<Wrapper>
+							<SubHeading>{headline}</SubHeading>
+							<BodyText>{intro}</BodyText>
+							<BodyText>{description}</BodyText>
+						</Wrapper>
+					</Column>
+				</Row>
+				
+			</Section>
 			<PullTabColumn >
 				<ul>
 					<PullTab >
@@ -51,7 +54,7 @@ const Info = ({ id }) => {
 					</PullTab>
 				</ul>
 			</PullTabColumn>
-		</Section>
+		</>
     )
 }
 
