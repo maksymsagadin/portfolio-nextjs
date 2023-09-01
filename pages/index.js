@@ -18,10 +18,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/MS.png" />
       </Head>
-      <Hero />
-      <About id='about' />
-      <Skills id='skills' />
-      <Projects id='projects' />
+      <main>
+        <Hero />
+        <About id='about' />
+        <Skills id='skills' />
+        <Projects id='projects' />
+      </main>
     </div>
   )
 }
