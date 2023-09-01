@@ -28,7 +28,7 @@ const Navbar = ({ hide }) => {
       <Nav hide={hide}>
 			  <NavbarContainer>
           <NavLogo >
-            <Image src={logo} height={75} width={75} quality={100} onClick={scroll.scrollToTop}/>
+            <Image src={logo} alt="Logo" priority height={75} width={75} quality={100} onClick={scroll.scrollToTop}/>
           </NavLogo>
           {hide && (
             <StartLink to="about" offset={-50} smooth={true} duration={duration}>
