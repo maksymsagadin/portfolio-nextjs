@@ -27,7 +27,7 @@ const Hero = () => {
   return (
 	<>
 		<HeroSection ref={ref} >
-			<Image alt='Background' src={bgimg} priority priorityfetch='high' quality={100} layout='fill' objectFit='cover' objectPosition='center' />
+			<Image alt='Background' src={bgimg} priority quality={100} layout='fill' objectFit='cover' objectPosition='center' />
 			<ImageFilter />
 			<Container>
 				<Heading center>
