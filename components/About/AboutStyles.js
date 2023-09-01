@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Image from 'next/image'
-import { light, dark, primary, secondary } from '../../data/GlobalData'
+import { light, dark } from '../../data/GlobalData'
 
 
 export const Row = styled.div`
@@ -41,7 +41,7 @@ export const PullTabColumn = styled.div`
 	flex-direction: column;
 	top: 14%;
 	right: 0;
-	color: ${light} important!;
+	color: ${dark} important!;
 `
 export const PullTab = styled.li`
 	display: flex;
@@ -53,12 +53,13 @@ export const PullTab = styled.li`
 	padding-right: 2rem;
 	transform: translateX(100px);
 	transition: transform 600ms, opacity 600ms;
-	background-color: ${({ color }) => (color ? color : dark)};
+	background-color: ${({ color }) => (color ? color : light)}; // color would represent custom colors for the background of the pull tabs
 	color: ${light};
 	&:hover {
 		transform: translateX(5px);
 		opacity: 100%;
-		border-radius: 0.75rem;
+		border-top-left-radius: 0.75rem;
+		border-bottom-left-radius: 0.75rem;
 	}
 	&:first-child {
 		border-top-left-radius: 0.75rem;
@@ -75,5 +76,6 @@ export const PullTabLink = styled.a`
 	width: 100%;
 `
 export const PullTabText = styled.p`
-	color: ${({ color }) => (color ? color : light)};
+	font-weight: bold;
+	color: ${({ color }) => (color ? color : dark)};
 `

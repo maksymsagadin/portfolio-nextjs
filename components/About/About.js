@@ -4,6 +4,8 @@ import { aboutData } from '../../data/AboutData'
 import { Section, SubHeading, BodyText } from '../../styles/globalStyles'
 import { Wrapper, Row, Column, Selfie, PullTabColumn, PullTab, PullTabLink, PullTabText } from './AboutStyles'
 import { FaGithubAlt, FaLinkedinIn } from 'react-icons/fa'
+import { dark } from '../../data/GlobalData'
+
 
 const Info = ({ id }) => {
     const { headline, intro, description, } = aboutData
@@ -34,7 +36,7 @@ const Info = ({ id }) => {
 							target='_blank'
 							rel="noreferrer"
 							>
-							<FaGithubAlt color='white' size={30} />
+							<FaGithubAlt color={dark} size={30} />
 							<PullTabText>
 								Github
 							</PullTabText>
@@ -46,7 +48,7 @@ const Info = ({ id }) => {
 							target='_blank'
 							rel="noreferrer"
 							>
-							<FaLinkedinIn color='white' size={30} />
+							<FaLinkedinIn color={dark} size={30} />
 							<PullTabText>
 								LinkedIn
 							</PullTabText>
