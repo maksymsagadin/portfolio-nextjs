@@ -20,6 +20,7 @@ import { heroData } from '../../data/HeroData'
 const Hero = () => {
 	const [showModal, setShowModal] = useState(false)
 
+	// Once the contact button is out of view, the corner class will be added to the button to change it's styling
 	const { ref, inView } = useInView({
 		rootMargin: '-100px',
 	})
