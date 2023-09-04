@@ -56,10 +56,9 @@ export const HeroButton = styled(motion.button)`
 	width: 250px;
 	margin: 0 auto;
 	padding: 15px 20px;
-	bottom: calc(100vh - 100px);
 	right: 50%;
 	bottom: 50%;
-	transform: translate(50%);
+	transform: translate( 50%,50% );
 	font-weight: 600;
 	text-transform: uppercase;
 	border-radius: 0.75rem;
@@ -70,21 +69,22 @@ export const HeroButton = styled(motion.button)`
 	overflow: hidden;
 	&.corner {
 		position: fixed;
-		bottom: 3rem;
-		right: 3rem;
+		transform: translate( 0%,0% );
+		bottom: 2.5rem;
+		right: 2.5rem;
 		width: 64px;
 		height: 64px;
 		padding: 10px;
 		background-color: ${primary};
 		color: ${dark};
 		border-radius: 50%;
-		transition: all 0s ease-in-out;
+		transition: transform 0.5s ease-in-out;
 	}
 	&:hover {
 		box-shadow: -5px 5px 9px 3px ${primary};
 		background-color: ${secondary};
 		color: ${light};
-		transition: all 0.6s ease-in-out;
+		transition: all 0.5s ease-in-out;
 	}
 	&:before {
 		background: ${secondary};
@@ -93,7 +93,7 @@ export const HeroButton = styled(motion.button)`
 		top: 50%;
 		left: 50%;
 		z-index: -1;
-		transition: all 0.6s ease-in-out;
+		transition: all 0.5s ease-in-out;
 		width: 100%;
 		height: 0%;
 		transform: translate(-50%, -50%) rotate(45deg);
@@ -105,7 +105,7 @@ export const HeroButton = styled(motion.button)`
 
 export const ContactIcon = styled(SiMinutemailer)`
 	font-size: 2.5rem;
-	transition: all 0.6s ease-in-out;
+	transition: all 0.5s ease-in-out;
 	color: ${dark};
 	&:hover {
 		color: ${light};

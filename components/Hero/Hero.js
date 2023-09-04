@@ -24,32 +24,30 @@ const Hero = () => {
 		rootMargin: '-100px',
 	})
 
-  return (
-	<>
-		<HeroSection ref={ref} >
-			<Image alt='Background' src={bgimg} priority layout='fill' objectFit='cover' objectPosition='center' />
-			<ImageFilter />
-			<Container>
-				<Heading center>
-					<HeroName>{heroData.name}</HeroName>
-				</Heading>
-				<HeroTitle center>{heroData.title}</HeroTitle>
-				<HeroText>{heroData.statement}</HeroText>
-				<ButtonContainer>
-					<HeroButton onClick={() => setShowModal(true)} className={inView ? '' : 'corner'}>
-						{inView ? <> Get in touch </> : <ContactIcon />}
-					</HeroButton>
-				</ButtonContainer>
-			</Container>
-		</HeroSection>
-		<Navbar hide={inView} />
-		<Modal show={showModal} onHide={() => setShowModal(false)}>
-			<ContactForm />
-		</Modal>
-	</>
-	
-   
-  )
+  	return (
+		<>
+			<HeroSection ref={ref} >
+				<Image alt='Background' src={bgimg} priority layout='fill' objectFit='cover' objectPosition='center' />
+				<ImageFilter />
+				<Container>
+					<Heading center>
+						<HeroName>{heroData.name}</HeroName>
+					</Heading>
+					<HeroTitle center>{heroData.title}</HeroTitle>
+					<HeroText>{heroData.statement}</HeroText>
+					<ButtonContainer>
+						<HeroButton onClick={() => setShowModal(true)} className={inView ? '' : 'corner'}>
+							{inView ? <> Get in touch </> : <ContactIcon />}
+						</HeroButton>
+					</ButtonContainer>
+				</Container>
+			</HeroSection>
+			<Navbar hide={inView} />
+			<Modal show={showModal} onHide={() => setShowModal(false)}>
+				<ContactForm />
+			</Modal>
+		</>
+	)
 }
 
 export default Hero
