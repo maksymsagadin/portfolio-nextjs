@@ -58,11 +58,11 @@ export const SubHeading = styled.h2`
 `
 export const BodyText = styled.p`
 	color: ${({ inverse }) => (inverse ? primary : light)};
-	text-indent: 1rem;
 	font-size: clamp(1rem, 2vw, 1.3rem);
 	text-align: ${({ center }) => (center ? 'center' : 'justify')};
-	&:first-of-type {
-        margin-bottom: 1rem;
+	margin-bottom: 1rem;
+	&:last-of-type {
+        margin-bottom: 0;
     }
 `
 export const Button = styled.button`

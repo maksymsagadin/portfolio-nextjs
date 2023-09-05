@@ -8,7 +8,7 @@ import { dark } from '../../data/GlobalData'
 
 
 const Info = ({ id }) => {
-    const { headline, intro, description, } = aboutData
+    const { headline, intro, description, conclusion } = aboutData
 
     return (
 		<>
@@ -23,10 +23,10 @@ const Info = ({ id }) => {
 							<SubHeading>{headline}</SubHeading>
 							<BodyText>{intro}</BodyText>
 							<BodyText>{description}</BodyText>
+							<BodyText>{conclusion}</BodyText>
 						</Wrapper>
 					</Column>
 				</Row>
-				
 			</Section>
 			<PullTabColumn >
 				<ul>

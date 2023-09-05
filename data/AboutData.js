@@ -1,8 +1,9 @@
 export const aboutData = {
-	headline: 'Who I Am',
-	intro: 'As an Application Administrator, I was intrigued by HTML and motivated to delve deeper into the world of coding and programming. I enrolled at De Anza College to study software programming, where I honed my skills in C++, Python, and Data Structures.',
+	headline: 'About Me',
+	intro: "Hey there! I'm Maksym, but you can just call me Maks",
 	description:
-		'The COVID-19 pandemic in 2020 resulted in a shift in my career path, as I found myself out of work and with ample time to learn HTML, CSS, Javascript, and React through Freemote. This newfound knowledge led me to take on freelance projects for local businesses and solidified my passion for front-end development. I am now seeking a full-time position as a Front End Developer, eager to apply my skills and continue growing in this exciting field.',
+		"From the moment I dabbled in HTML as an Application Administrator, I knew I was onto something special. My intrigue led me to De Anza College, diving deep into C++, Python, and the intricate world of Data Structures. But life has its twists, and the unexpected pause brought by 2020's pandemic became my springboard. I immersed myself in HTML, CSS, Javascript, and React, thanks to Freemote. Before I knew it, I was crafting digital solutions for local businesses, further fueling my passion for web development.",
+	conclusion: "Now, with a blend of formal education and hands-on experience, I'm on the lookout for my next big challenge. Whether it's a role as a Front End Developer, Full Stack Developer, or somewhere in between, I'm all in. If you're seeking someone who's as passionate about pixels as he is about code, let's connect!",
 	bgImg: '/backgrounds/bg-dark.jpeg',
 	heroImg: '/hero-image.jpeg',
 }
