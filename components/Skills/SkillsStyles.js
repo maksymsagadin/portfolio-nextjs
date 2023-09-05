@@ -16,6 +16,10 @@ export const SkillsGrid = styled.div`
 	}
 	@media screen and (max-width: 475px) {
 		grid-template-columns: repeat(1, 1fr);
+		/* Hide grid items over 4 for mobile devices*/
+		> :nth-child(n + 5) {
+			display: none;
+		}
 	}
 `
 export const SkillWrapper = styled.div`
