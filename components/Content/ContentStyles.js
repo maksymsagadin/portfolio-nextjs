@@ -59,6 +59,9 @@ export const TopText = styled(motion.div)`
 	margin-bottom: 0.75rem;
 	border-bottom: 2px solid ${primary};
 	color: ${secondary};
+	@media screen and (max-width: 768px) {
+		text-align: center;
+	}
 `
 export const Heading = styled(motion.h2)`
 	padding-bottom: 0.75rem;
