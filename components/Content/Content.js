@@ -32,7 +32,7 @@ const Content = ({
 	const animation = useAnimation()
 
 	const { ref, inView } = useInView({
-		threshold: 0.3,
+		threshold: 0.2,
 	})
 
 	useEffect(() => {
