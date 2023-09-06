@@ -9,12 +9,12 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Maksym | Front-End Developer</title>
+        <title>Maksym | Full Stack Developer</title>
         <meta name="og:locale" content="en_US" />
-        <meta name="description" content='I’m a front-end web developer specializing in building (and occasionally designing) digital experiences.' />
-        <meta name="keywords" content="Web Development, Front-end, Fullstack, JavaScript, Typescript React, Python, Next.js" />
+        <meta name="description" content='I’m a Full Stack Developer specializing in building (and occasionally designing) digital experiences.' />
+        <meta name="keywords" content="Full Stack, Web Development, Front End, HTML, JavaScript, Typescript, React.js, Python, Next.js" />
         <meta name="author" content="Maksym Sagadin" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
         <link rel="icon" href="/MS.png" />
       </Head>
       <main>

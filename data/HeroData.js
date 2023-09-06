@@ -1,5 +1,5 @@
 export const heroData = {
     name: 'Maksym Sagadin',
-    title: 'Web Developer',
-    statement: 'I specialize in building responsive front-end web applications that provide an exceptional experience.',
+    title: 'Full Stack Engineer',
+    statement: 'Crafting intuitive, high-performance web solutions that captivate and engage.',
 }
