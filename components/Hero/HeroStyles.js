@@ -35,11 +35,12 @@ export const HeroTitle = styled.h3`
 	text-align: center;
 `
 export const HeroText = styled.p`
-	margin-bottom: 2rem;
-	font-size: clamp(1rem, 1.5vw, 4rem);
+	margin-bottom: 3.25rem;
+	font-size: clamp(1.1rem, 1.5vw, 4rem);
 	text-align: center;
 	letter-spacing: 2px;
-	font-weight: 500;
+	font-weight: 700;
+	text-shadow: -3px 3px 5px ${dark};
 	color: ${light};
 `
 export const ButtonContainer = styled.div`
@@ -49,7 +50,6 @@ export const ButtonContainer = styled.div`
 	height: 150px;
 `
 
-
 export const HeroButton = styled(motion.button)`
 	position: absolute;
 	font-size: clamp(1rem, 1vw, 1.5rem);
@@ -57,7 +57,7 @@ export const HeroButton = styled(motion.button)`
 	margin: 0 auto;
 	padding: 15px 20px;
 	right: 50%;
-	bottom: 50%;
+	bottom: 100%;
 	transform: translate( 50%,50% );
 	font-weight: 600;
 	text-transform: uppercase;

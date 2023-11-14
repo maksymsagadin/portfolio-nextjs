@@ -2,20 +2,17 @@ import React, { useState } from 'react'
 import { 
 	HeroSection, 
 	ImageFilter, 
-	HeroName, 
-	HeroTitle, 
 	HeroText, 
 	ButtonContainer,
 	HeroButton, 
 	ContactIcon } from './HeroStyles'
 import Image from 'next/image'
-import { Container, Heading } from '../../styles/globalStyles'
-import bgimg from '/public/backgrounds/bg-blue.jpeg'
+import { Container } from '../../styles/globalStyles'
+import bgimg from '/public/backgrounds/image1.jpeg'
 import Navbar from '../Navbar/Navbar'
 import Modal from '../Modal/Modal'
 import ContactForm from '../ContactForm/ContactForm'
 import { useInView } from 'react-intersection-observer'
-import { heroData } from '../../data/HeroData'
 
 const Hero = () => {
 	const [showModal, setShowModal] = useState(false)
@@ -31,11 +28,7 @@ const Hero = () => {
 				<Image alt='Background' src={bgimg} priority layout='fill' objectFit='cover' objectPosition='center' />
 				<ImageFilter />
 				<Container>
-					<Heading center>
-						<HeroName>{heroData.name}</HeroName>
-					</Heading>
-					<HeroTitle center>{heroData.title}</HeroTitle>
-					<HeroText>{heroData.statement}</HeroText>
+					<HeroText>Crafting intuitive, high-performance web solutions that captivate and engage.</HeroText>
 					<ButtonContainer>
 						<HeroButton onClick={() => setShowModal(true)} className={inView ? '' : 'corner'}>
 							{inView ? <> Get in touch </> : <ContactIcon />}
