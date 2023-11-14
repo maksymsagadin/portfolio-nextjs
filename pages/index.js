@@ -11,7 +11,7 @@ export default function Home() {
       <Head>
         <title>Maksym | Full Stack Developer</title>
         <meta name="og:locale" content="en_US" />
-        <meta name="description" content='I’m a Full Stack Developer specializing in building (and occasionally designing) digital experiences.' />
+        <meta name="description" content='I’m a Full Stack Developer specializing in building (and occasionally designing) digital web experiences.' />
         <meta name="keywords" content="Full Stack, Web Development, Front End, HTML, JavaScript, Typescript, React.js, Python, Next.js" />
         <meta name="author" content="Maksym Sagadin" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
